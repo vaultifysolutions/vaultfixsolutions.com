@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sample Vulnerability Assessment Report – Vaultify Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A redacted sample vulnerability assessment report demonstrating the structure and depth of Vaultify Solutions deliverables.">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Page‑specific styles */
+    .sample-report {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+    .sample-report h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: var(--color-primary);
+    }
+    .sample-report h2 {
+      margin-top: 2rem;
+      margin-bottom: 0.8rem;
+      font-size: 1.4rem;
+      color: var(--color-primary);
+    }
+    .sample-report p {
+      color: var(--color-muted);
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+    .report-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+    .report-table th,
+    .report-table td {
+      padding: 0.75rem;
+      border: 1px solid var(--color-primary);
+      text-align: left;
+    }
+    .report-table th {
+      background-color: var(--color-primary);
+      color: var(--color-bg);
+      font-weight: 600;
+    }
+    .report-table td {
+      background-color: var(--color-card);
+      color: var(--color-text);
+    }
+    .report-table tr:nth-child(even) td {
+      background-color: #101a42;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="brand" aria-label="Vaultify Solutions home">
+        <img src="logo.png" alt="Vaultify Solutions logo" class="brand-logo">
+        <img src="wordmark.png" alt="Vaultify Solutions wordmark" class="brand-wordmark">
+      </a>
+    </nav>
+  </header>
+  <main>
+    <section class="sample-report">
+      <div class="container">
+        <h1>Sample Vulnerability Assessment Report</h1>
+        <p>This redacted sample report demonstrates the structure and depth of our deliverables. It includes an executive summary, technical findings with CVSS scoring and remediation guidance. Specific details have been anonymized.</p>
+        <h2>Executive Summary</h2>
+        <p>During a two‑week engagement, Vaultify Solutions conducted a targeted web vulnerability assessment against the client’s staging environment. Our analysts identified critical and high‑risk issues involving injection and access control, along with several medium and low risk weaknesses. The development team remediated the majority of findings within one sprint. A retest verified that mitigations were effective and no regression was introduced.</p>
+        <h2>Technical Findings (Excerpt)</h2>
+        <table class="report-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Vulnerability</th>
+              <th>Severity</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>V‑001</td>
+              <td>SQL Injection in Login Form</td>
+              <td>High (CVSS 8.8)</td>
+              <td>Unpatched</td>
+            </tr>
+            <tr>
+              <td>V‑002</td>
+              <td>Cross‑Site Scripting (XSS) in Comment Field</td>
+              <td>Medium (CVSS 6.1)</td>
+              <td>Patched</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Remediation Guidance (Excerpt)</h2>
+        <p><strong>SQL Injection:</strong> Use parameterized queries and prepared statements. Implement input validation and proper error handling to prevent injection of untrusted data into database queries.</p>
+        <p><strong>Cross‑Site Scripting:</strong> Encode output based on context, implement a strict Content‑Security‑Policy and sanitize user input to eliminate injection vectors. Ensure third‑party libraries are up‑to‑date.</p>
+        <p style="margin-top: 2rem;">For a full report tailored to your environment, please engage with Vaultify Solutions.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container footer-content">
+      <div class="tagline">Secure • Defend • Evolve</div>
+      <div class="copyright">&copy; 2026 Vaultify Solutions. All rights reserved.</div>
+    </div>
+  </footer>
+</body>
+</html>
