@@ -1,72 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vaultify Solutions | Get in Touch</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Contact | Vaultify Solutions</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="container-fluid">
-    <ul>
-      <li>
-        <strong>
-          <img src="logo.png" alt="Vaultify logo" style="height:32px;vertical-align:middle;margin-right:0.4rem;">
-          V&Lambda;ULTIFY <span class="tagline">Solutions</span>
-        </strong>
-      </li>
-    </ul>
-    <ul>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html" role="button">Get in Touch</a></li>
-    </ul>
-  </nav>
-
-  <!-- Main content -->
-  <main class="container">
-    <div class="grid">
-      <section>
-        <hgroup>
-          <h2>Get in Touch</h2>
-          <h3>We're here to help</h3>
-        </hgroup>
-        <p>Whether you're ready to schedule an assessment or have questions about our services, we'd love to hear from you.</p>
-        <form class="grid">
-          <input type="text" id="name" name="name" placeholder="Your Name" aria-label="Your Name" required />
-          <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Your Email" required />
-          <textarea id="message" name="message" placeholder="Your Message" aria-label="Your Message" required style="resize:vertical;min-height:120px;"></textarea>
-          <button type="submit" onclick="event.preventDefault()">Send Message</button>
+    <header>
+        <a href="index.html" class="brand">
+            <img src="logo.png" alt="Vaultify Logo">
+            <div class="brand-text">
+                <span class="brand-name">VΛULTIFY Solutions</span>
+                <span class="tagline">Secure • Defend • Evolve</span>
+            </div>
+        </a>
+        <nav>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="btn">Get in Touch</a>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <h1>Let's Get in Touch</h1>
+            <p class="subtitle">Ready to schedule an assessment or have a question? We're here to help.</p>
+        </div>
+        <form class="contact-form" onsubmit="alert('Thank you for reaching out! A member of the Vaultify team will be in touch shortly. You can also email us directly at info@vaultifysolutions.com'); return false;">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">How can we help you?</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+            <p style="text-align: center; margin-top: 20px; font-size: 14px; color: #666;">
+                Alternatively, email us directly at: <br>
+                <a href="mailto:info@vaultifysolutions.com" style="color: var(--primary-blue); font-weight: bold;">info@vaultifysolutions.com</a>
+            </p>
         </form>
-        <p>You can also email us at <a href="mailto:info@vaultifysolutions.com">info@vaultifysolutions.com</a>.</p>
-      </section>
-    </div>
-  </main>
-
-  <!-- Subscribe section -->
-  <section aria-label="Subscribe example">
-    <div class="container">
-      <article>
-        <hgroup>
-          <h2>Stay informed</h2>
-          <h3>Subscribe to security insights and updates</h3>
-        </hgroup>
-        <form class="grid">
-          <input type="text" id="firstname" name="firstname" placeholder="First name" aria-label="First name" required />
-          <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" required />
-          <button type="submit" onclick="event.preventDefault()">Subscribe</button>
-        </form>
-      </article>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="container">
-    <small>
-      <a href="#">Privacy</a> • <a href="#">Terms</a>
-    </small>
-  </footer>
+    </main>
+    <footer>
+        <div class="newsletter">
+            <h3>Subscribe for Security Insights</h3>
+            <form action="#" method="POST">
+                <input type="text" placeholder="First Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+        </div>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+            <p>&copy; 2026 Vaultify Solutions. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

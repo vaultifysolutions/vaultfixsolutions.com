@@ -1,69 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vaultify Solutions | Home</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Vaultify Solutions | Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="container-fluid">
-    <ul>
-      <li>
-        <strong>
-          <img src="logo.png" alt="Vaultify logo" style="height:32px;vertical-align:middle;margin-right:0.4rem;">
-          V&Lambda;ULTIFY <span class="tagline">Solutions</span>
-        </strong>
-      </li>
-    </ul>
-    <ul>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html" role="button">Get in Touch</a></li>
-    </ul>
-  </nav>
-
-  <!-- Main content -->
-  <main class="container">
-    <div class="grid">
-      <section>
-        <hgroup>
-          <h2>Specialist Web Vulnerability Assessment</h2>
-          <h3>Secure your web presence with clarity and precision.</h3>
-        </hgroup>
-        <p>Vaultify Solutions delivers focused vulnerability assessment services to help organizations identify and remediate exploitable weaknesses across their web infrastructure. Our certified analysts manually validate findings, provide risk‑based scoring and support remediation from start to finish.</p>
-        <h3>Why choose Vaultify?</h3>
-        <p>We guarantee accuracy through manual verification and clear guidance. Our lean, specialist team dedicates more time to your security posture, not administrative overhead.</p>
-        <h3>Ready to get started?</h3>
-        <p><a href="contact.html" role="button">Get in Touch</a></p>
-      </section>
-    </div>
-  </main>
-
-  <!-- Subscribe section -->
-  <section aria-label="Subscribe example">
-    <div class="container">
-      <article>
-        <hgroup>
-          <h2>Stay informed</h2>
-          <h3>Subscribe to security insights and updates</h3>
-        </hgroup>
-        <form class="grid">
-          <input type="text" id="firstname" name="firstname" placeholder="First name" aria-label="First name" required />
-          <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" required />
-          <button type="submit" onclick="event.preventDefault()">Subscribe</button>
-        </form>
-      </article>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="container">
-    <small>
-      <a href="#">Privacy</a> • <a href="#">Terms</a>
-    </small>
-  </footer>
+    <header>
+        <a href="index.html" class="brand">
+            <img src="logo.png" alt="Vaultify Logo">
+            <div class="brand-text">
+                <span class="brand-name">VΛULTIFY Solutions</span>
+                <span class="tagline">Secure • Defend • Evolve</span>
+            </div>
+        </a>
+        <nav>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="btn">Get in Touch</a>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <h1>Specialist Web Vulnerability Assessment</h1>
+            <p class="subtitle">Securing your web presence with clarity and precision.</p>
+        </div>
+        <div>
+            <h2>Precision Security Focus</h2>
+            <p>At Vaultify Solutions, our sole focus is on web vulnerability assessments. We dive deep into your applications to uncover flaws that automated tools miss. Through meticulous manual validation, risk‑based scoring, and dedicated remediation support, we ensure your assets remain fortified against modern threats.</p>
+            <p>Why choose us? We eliminate the noise of false positives, giving your team the high-signal intelligence they need to act decisively.</p>
+            <br>
+            <a href="contact.html" class="btn">Start Your Assessment</a>
+        </div>
+    </main>
+    <footer>
+        <div class="newsletter">
+            <h3>Subscribe for Security Insights</h3>
+            <form action="#" method="POST">
+                <input type="text" placeholder="First Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+        </div>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+            <p>&copy; 2026 Vaultify Solutions. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

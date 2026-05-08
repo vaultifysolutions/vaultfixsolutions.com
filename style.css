@@ -1,0 +1,176 @@
+/* style.css */
+:root {
+    --primary-blue: #112A46;
+    --light-bg: #f9fbfe;
+    --text-color: #333333;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+/* --- HEADER & NAVIGATION --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+}
+
+.brand img {
+    height: 45px;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-name {
+    color: var(--primary-blue);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.tagline {
+    color: var(--primary-blue);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #4a6fa5;
+}
+
+.btn {
+    background-color: var(--primary-blue);
+    color: #ffffff;
+    padding: 10px 24px;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #1e4576;
+}
+
+/* --- MAIN CONTENT --- */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    min-height: 50vh;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+h1 {
+    color: var(--primary-blue);
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* --- SERVICES CARDS --- */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: var(--light-bg);
+    border: 1px solid #e0e6ed;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: var(--primary-blue);
+    margin-top: 0;
+}
+
+/* --- FORMS --- */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: var(--light-bg);
+    padding: 50px 20px;
+    text-align: center;
+    border-top: 1px solid #eeeeee;
+}
+
+.newsletter {
+    margin-bottom: 30px;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.footer-links {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-links a {
+    color: #666;
+    text-decoration: none;
+    margin: 0 10px;
+}
