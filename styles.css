@@ -41,7 +41,8 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1rem;
-  background-color: var(--color-bg);
+  /* Lighten the navigation background slightly so the dark blue logo remains visible */
+  background-color: #0d1a37;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -56,16 +57,41 @@ body {
   color: var(--color-text);
 }
 
+/* Logo: use the original dark blue asset without inversion and reduce its size. */
 .brand-logo {
-  width: 40px;
+  width: 36px;
   height: auto;
-  filter: invert(1) brightness(1.4);
+  display: block;
 }
 
-.brand-wordmark {
-  height: 36px;
-  width: auto;
-  filter: invert(1) brightness(1.4);
+/* The wordmark image is not used in this version; the company name and tagline are rendered as text. */
+
+/* Brand container adjustments for text rendering */
+.brand-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand-name {
+  color: var(--color-text);
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+}
+
+.brand-tagline {
+  color: var(--color-muted);
+  font-size: 0.65rem;
+  letter-spacing: 0.15rem;
+  margin-top: 0.1rem;
 }
 
 .nav-links {
