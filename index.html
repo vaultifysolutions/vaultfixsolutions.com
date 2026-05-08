@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaultify Solutions | Corporate Cybersecurity Specialists</title>
+  <meta name="description" content="Vaultify Solutions is a boutique cybersecurity firm specializing in precise Web and API Vulnerability Assessments.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="brand" style="display: flex; align-items: center; gap: 16px;">
+      <!-- V/S Shield Logo -->
+      <img src="log1.jpg" alt="Vaultify Shield" style="height: 45px; object-fit: contain;">
+      
+      <!-- Vaultify Wordmark -->
+      <img src="log2.png" alt="Vaultify Solutions" style="height: 35px; object-fit: contain;">
+    </a>
+    
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#methodology">Methodology</a></li>
+      <li><a href="#deliverables">Deliverables</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#contact" class="btn-nav">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 1. HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Specialist Web & API <br><span class="highlight">Vulnerability Assessment</span></h1>
+      <p>Vaultify Solutions helps modern companies identify, validate, and remediate exploitable security weaknesses before they become business risk.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary">Request an Assessment</a>
+        <a href="#sample" class="btn-secondary">View Sample Report</a>
+      </div>
+    </div>
+    
+    <!-- Premium Terminal UI Visual -->
+    <div class="terminal">
+      <div class="term-header">
+        <div class="term-dot" style="background:#FF5F57"></div>
+        <div class="term-dot" style="background:#FEBC2E"></div>
+        <div class="term-dot" style="background:#28C840"></div>
+        <div class="term-title">vaultify-core // live-assessment</div>
+      </div>
+      <div class="term-body">
+        <div><span class="t-cmd">$</span> ./vscan --target client-api.internal --mode manual-verify</div>
+        <div>[INFO] Establishing secure tunnel... <span class="t-ok">OK</span></div>
+        <div>[INFO] Authenticated session established.</div>
+        <div>[SCAN] Analyzing endpoint authorization controls...</div>
+        <div><span class="t-crit">[CRIT]</span> A01: Broken Access Control detected (CVSS 9.1)</div>
+        <div><span class="t-cmd">[ACTN]</span> Analyst verification required.</div>
+        <div><span class="t-ok">[DONE]</span> Finding validated. Extracted proof-of-concept.</div>
+        <div><span class="t-cmd">$</span> <span style="display:inline-block; width:8px; height:15px; background:var(--accent-blue); animation:blink 1s infinite;"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. TRUST / POSITIONING -->
+  <section class="section bg-navy" style="text-align: center;">
+    <div class="container">
+      <h2 class="sec-title" style="font-size: 1.8rem; margin-bottom: 24px;">Focused assessment. Manual validation. Clear remediation.</h2>
+      <p class="sec-subtitle" style="margin: 0 auto;">Vaultify Solutions is intentionally focused strictly on vulnerability assessment. This specialization allows every engagement to be deeper, cleaner, and strictly actionable for engineering teams.</p>
+    </div>
+  </section>
+
+  <!-- 3. SERVICES SECTION -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="sec-title">Primary <span class="highlight">Services</span></h2>
+      <p class="sec-subtitle">Precise, engineering-focused security reviews for modern applications.</p>
+      
+      <div class="grid-3">
+        <div class="card">
+          <h3>Web Application Assessment</h3>
+          <p>Identify security weaknesses in modern web applications, including authentication, authorization, input validation, session handling, and business logic flaws.</p>
+        </div>
+        <div class="card">
+          <h3>API Vulnerability Assessment</h3>
+          <p>Assess REST and API endpoints for access control issues, broken object-level authorization, insecure data exposure, weak authentication, and OWASP API Top 10 risks.</p>
+        </div>
+        <div class="card">
+          <h3>OWASP Top 10 Review</h3>
+          <p>Evaluate applications against recognized industry risk categories using a highly structured, repeatable testing methodology.</p>
+        </div>
+        <div class="card">
+          <h3>Manual Verification</h3>
+          <p>Every reported finding is manually validated by a certified analyst for accuracy, exploitability, and true business impact.</p>
+        </div>
+        <div class="card">
+          <h3>Remediation Guidance</h3>
+          <p>Provide practical, developer-friendly remediation steps so engineering teams can fix critical issues efficiently.</p>
+        </div>
+        <div class="card">
+          <h3>Retest Validation</h3>
+          <p>A structured follow-up phase to confirm that all remediated vulnerabilities have been properly and securely resolved.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. METHODOLOGY SECTION -->
+  <section id="methodology" class="section bg-navy">
+    <div class="container">
+      <h2 class="sec-title">Assessment <span class="highlight">Methodology</span></h2>
+      <p class="sec-subtitle">We do not rely on scanner output alone. Findings are reviewed, validated, and documented with actionable evidence.</p>
+      
+      <div class="method-list" style="max-width: 800px;">
+        <div class="method-item"><span class="method-num">01</span><span class="method-text">Scope & NDA Execution</span></div>
+        <div class="method-item"><span class="method-num">02</span><span class="method-text">Asset & Surface Mapping</span></div>
+        <div class="method-item"><span class="method-num">03</span><span class="method-text">Automated Discovery</span></div>
+        <div class="method-item" style="border-left: 3px solid var(--accent-blue);"><span class="method-num">04</span><span class="method-text">Manual Verification & Exploitability Analysis</span></div>
+        <div class="method-item"><span class="method-num">05</span><span class="method-text">CVSS Risk Scoring</span></div>
+        <div class="method-item"><span class="method-num">06</span><span class="method-text">Executive & Technical Reporting</span></div>
+        <div class="method-item"><span class="method-num">07</span><span class="method-text">Remediation Guidance & Retest Validation</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. DELIVERABLES & 6. SAMPLE REPORT -->
+  <section id="deliverables" class="section">
+    <div class="container grid-2">
+      <div>
+        <h2 class="sec-title">The <span class="highlight">Deliverables</span></h2>
+        <p class="sec-subtitle">Structured for both leadership and engineering.</p>
+        <ul style="display:grid; gap:12px; color:var(--text-silver);">
+          <li>■ Executive Risk Summary</li>
+          <li>■ Technical Vulnerability Report</li>
+          <li>■ CVSS Severity Scoring Matrix</li>
+          <li>■ Proof-of-Concept Evidence</li>
+          <li>■ Business Impact Explanation</li>
+          <li>■ Step-by-Step Remediation Guidance</li>
+          <li>■ Prioritized Fix Roadmap</li>
+          <li>■ Optional Developer Handoff Call</li>
+        </ul>
+      </div>
+      
+      <div id="sample" class="card" style="display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;">
+        <h3 style="font-size: 1.5rem; margin-bottom: 16px;">See the quality of our reporting before you engage.</h3>
+        <p style="margin-bottom: 32px;">A professional vulnerability assessment is only as useful as the clarity of its report. Vaultify reports are designed for precise action.</p>
+        <a href="#" class="btn-primary">View Sample Report</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. ANONYMIZED SCENARIOS -->
+  <section class="section bg-navy">
+    <div class="container">
+      <h2 class="sec-title">Representative <span class="highlight">Scenarios</span></h2>
+      <p class="sec-subtitle">Examples of our core focus areas in production environments.</p>
+      
+      <div class="grid-3">
+        <div class="card">
+          <h3 style="color:var(--accent-blue); font-size:1rem; margin-bottom:8px;">FinTech API Assessment</h3>
+          <p>Identified an authorization weakness that could expose sensitive account-level data through insecure object access prior to production deployment.</p>
+        </div>
+        <div class="card">
+          <h3 style="color:var(--accent-blue); font-size:1rem; margin-bottom:8px;">SaaS Web Application Review</h3>
+          <p>Discovered critical authentication and session handling weaknesses, delivering a remediation plan that secured the platform before public launch.</p>
+        </div>
+        <div class="card">
+          <h3 style="color:var(--accent-blue); font-size:1rem; margin-bottom:8px;">Startup Platform Assessment</h3>
+          <p>Provided a prioritized remediation roadmap for OWASP Top 10 risks across core application workflows, enabling secure scaling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. ABOUT & 9. SECURITY -->
+  <section id="security" class="section">
+    <div class="container grid-2">
+      <div>
+        <h2 class="sec-title">The <span class="highlight">Vaultify</span> Approach</h2>
+        <p style="color: var(--text-silver); margin-bottom: 16px;">Vaultify Solutions was built for organizations that need focused, high-signal vulnerability assessment without the overhead of large consulting firms.</p>
+        <p style="color: var(--text-silver);">Our assessment methodology relies on specialist-led review. Vaultify Analysts execute structured, evidence-based testing built purely around identifying risk and enabling practical remediation.</p>
+      </div>
+      <div class="card">
+        <h3>Responsible Disclosure</h3>
+        <p style="margin-bottom:16px;">Vaultify Solutions welcomes responsible vulnerability disclosure for its public-facing assets. Good-faith reports can be submitted through our security channel.</p>
+        <ul style="color:var(--text-silver); font-size:0.9rem; display:grid; gap:8px;">
+          <li>✓ No destructive testing permitted</li>
+          <li>✓ No social engineering</li>
+          <li>✓ No customer data access</li>
+          <li>✓ Safe, ethical reporting only</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. FINAL CTA -->
+  <section id="contact" class="section bg-navy" style="text-align: center; padding: 120px 5%;">
+    <div class="container">
+      <h2 class="sec-title">Ready to validate your attack surface?</h2>
+      <p class="sec-subtitle" style="margin: 0 auto 48px;">Start with a focused Web or API Vulnerability Assessment built for clarity, accuracy, and remediation.</p>
+      <div class="hero-btns" style="justify-content: center;">
+        <a href="#" class="btn-primary">Request an Assessment</a>
+        <a href="#sample" class="btn-secondary">View Sample Report</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:24px;">
+      <div style="display:flex; align-items:center; gap: 12px;">
+         <img src="log1.jpg" alt="Vaultify" style="height: 24px;">
+         <span style="font-weight:700; color:#fff; letter-spacing:0.1em;">VAULTIFY SOLUTIONS</span>
+      </div>
+      <div style="display:flex; gap:24px;">
+        <a href="#">Privacy Policy</a>
+        <a href="#security">Security</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>&copy; 2026 Vaultify Solutions. All rights reserved.</div>
+    </div>
+  </footer>
+
+</body>
+</html>
