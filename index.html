@@ -3,33 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vaultify Solutions &mdash; Web Application Vulnerability Assessment</title>
-  <meta name="description" content="Professional web application vulnerability assessment for funded startups and growing businesses. Certified team. Comprehensive reports. Global delivery.">
+  <title>Vaultify Solutions &mdash; Web Application Security</title>
+  <meta name="description" content="Manual OWASP-aligned vulnerability assessments for startups and growing businesses. Zero false positives. 48-hour delivery.">
   <link rel="icon" href="logo.png" type="image/png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- NAV -->
 <nav id="navbar">
   <a href="index.html" class="nav-logo">
     <img src="logo.png" alt="Vaultify Solutions">
+    <div class="nav-logo-sep"></div>
     <div class="nav-logo-text">
-      <span class="nav-logo-name">VAULTIFY</span>
-      <span class="nav-logo-sub">SOLUTIONS</span>
+      <span class="nav-brand">Vaultify</span>
+      <span class="nav-brand-sub">Solutions</span>
     </div>
   </a>
   <ul class="nav-links">
     <li><a href="services.html">Services</a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href="contact.html" class="nav-cta">Get in Touch</a></li>
+    <li><a href="contact.html" class="nav-btn">Get in Touch</a></li>
   </ul>
   <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
-
-<!-- MOBILE NAV -->
 <div class="nav-mobile" id="navMobile">
   <a href="services.html">Services</a>
   <a href="about.html">About</a>
@@ -38,345 +36,271 @@
 
 <!-- HERO -->
 <section class="hero">
+  <div class="hero-bg-dots"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow-2"></div>
   <div class="hero-inner">
+
+    <!-- Left: copy -->
     <div>
-      <div class="eyebrow">
-        <div class="eyebrow-bar"></div>
+      <div class="hero-eyebrow reveal">
+        <div class="hero-dot"></div>
         <span>Web Application Security</span>
       </div>
-      <h1>We Find What<br><em>Attackers</em> Look For.<br>Before They Do.</h1>
-      <div class="hero-rule"></div>
-      <p>Vaultify Solutions delivers professional web application vulnerability assessments for funded startups and growing businesses &mdash; globally. Certified team, comprehensive reports, clear remediation.</p>
-      <div class="hero-actions">
-        <a href="contact.html" class="btn-primary">Request an Assessment</a>
-        <a href="services.html" class="btn-outline">Our Services</a>
+      <h1 class="reveal">Secure Your Application<br><strong>Before Attackers<br>Find the Gap.</strong></h1>
+      <p class="hero-sub reveal">Manual, OWASP-aligned vulnerability assessments for startups and growing businesses. Zero false positives. Delivered in 48 hours.</p>
+      <div class="hero-actions reveal">
+        <a href="contact.html" class="btn-primary">Book Assessment
+          <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
+        </a>
+        <a href="services.html" class="btn-secondary">View Services
+          <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
+        </a>
       </div>
-      <div class="hero-kpis">
-        <div>
-          <div class="kpi-num">48h</div>
-          <div class="kpi-label">Report Delivery</div>
+      <div class="trust-row reveal">
+        <div class="trust-item">
+          <div class="trust-check"><svg viewBox="0 0 10 10" stroke="#0B2E6D" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="1.5,5 4,7.5 8.5,2.5"/></svg></div>
+          <span>OWASP Testing Guide</span>
         </div>
-        <div>
-          <div class="kpi-num">0%</div>
-          <div class="kpi-label">False Positives</div>
+        <div class="trust-item">
+          <div class="trust-check"><svg viewBox="0 0 10 10" stroke="#0B2E6D" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="1.5,5 4,7.5 8.5,2.5"/></svg></div>
+          <span>Manual Verification</span>
         </div>
-        <div>
-          <div class="kpi-num">NDA</div>
-          <div class="kpi-label">Every Engagement</div>
+        <div class="trust-item">
+          <div class="trust-check"><svg viewBox="0 0 10 10" stroke="#0B2E6D" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="1.5,5 4,7.5 8.5,2.5"/></svg></div>
+          <span>NDA Protected</span>
+        </div>
+        <div class="trust-item">
+          <div class="trust-check"><svg viewBox="0 0 10 10" stroke="#0B2E6D" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="1.5,5 4,7.5 8.5,2.5"/></svg></div>
+          <span>48h Reports</span>
         </div>
       </div>
     </div>
 
-    <div class="hero-visual">
-      <div class="hero-ring">
-        <img src="logo.png" alt="">
-        <div class="pulse p1"></div>
-        <div class="pulse p2"></div>
-        <div class="pulse p3"></div>
-      </div>
-      <div class="hero-card hero-card-a">
-        <div class="c-label">Latest Scan Results</div>
-        <div class="c-value">14 Findings</div>
-        <div class="c-sub">Across 247 endpoints</div>
-        <div class="badge-row">
-          <span class="badge b-crit">2 Critical</span>
-          <span class="badge b-high">4 High</span>
-          <span class="badge b-med">8 Med</span>
+    <!-- Right: abstract geometric visual -->
+    <div class="hero-visual reveal">
+      <svg class="hero-svg" viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Outer hex ring -->
+        <polygon points="240,18 384,99 384,261 240,342 96,261 96,99" stroke="#0B2E6D" stroke-width="1" fill="none" opacity="0.10"/>
+        <!-- Mid hex -->
+        <polygon points="240,58 360,128 360,250 240,308 120,250 120,128" stroke="#0B2E6D" stroke-width="1.2" fill="none" opacity="0.08"/>
+        <!-- Inner hex with subtle fill -->
+        <polygon points="240,98 340,155 340,243 240,294 140,243 140,155" stroke="#0B2E6D" stroke-width="1.4" fill="rgba(11,46,109,0.03)" opacity="1"/>
+        <!-- Shield / protection shape -->
+        <path d="M240 144 L294 172 L294 222 Q294 265 240 282 Q186 265 186 222 L186 172 Z" stroke="#0B2E6D" stroke-width="2" fill="rgba(11,46,109,0.05)" stroke-linejoin="round"/>
+        <!-- Check mark -->
+        <polyline points="213,210 232,232 267,188" stroke="#0B2E6D" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.75"/>
+        <!-- Node circles at hex vertices -->
+        <circle cx="240" cy="18"  r="4.5" fill="#0B2E6D" opacity="0.15"/>
+        <circle cx="384" cy="99"  r="3.5" fill="#0B2E6D" opacity="0.12"/>
+        <circle cx="384" cy="261" r="3.5" fill="#0B2E6D" opacity="0.12"/>
+        <circle cx="240" cy="342" r="4.5" fill="#0B2E6D" opacity="0.15"/>
+        <circle cx="96"  cy="261" r="3.5" fill="#0B2E6D" opacity="0.12"/>
+        <circle cx="96"  cy="99"  r="3.5" fill="#0B2E6D" opacity="0.12"/>
+        <!-- Radiating lines -->
+        <line x1="240" y1="342" x2="240" y2="430" stroke="#0B2E6D" stroke-width="1" opacity="0.06"/>
+        <line x1="384" y1="261" x2="456" y2="318" stroke="#0B2E6D" stroke-width="1" opacity="0.06"/>
+        <line x1="96"  y1="261" x2="24"  y2="318" stroke="#0B2E6D" stroke-width="1" opacity="0.06"/>
+        <!-- Small decorative hex top-right -->
+        <polygon points="412,24 438,39 438,70 412,85 386,70 386,39" stroke="#0B2E6D" stroke-width="1" fill="none" opacity="0.09"/>
+        <circle cx="412" cy="24" r="2.5" fill="#0B2E6D" opacity="0.18"/>
+        <!-- Small decorative hex bottom-left -->
+        <polygon points="68,378 94,393 94,424 68,439 42,424 42,393" stroke="#0B2E6D" stroke-width="1" fill="none" opacity="0.07"/>
+        <circle cx="68" cy="439" r="2.5" fill="#0B2E6D" opacity="0.12"/>
+        <!-- Dashed connector lines -->
+        <line x1="386" y1="56" x2="360" y2="128" stroke="#0B2E6D" stroke-width="1" stroke-dasharray="3 4" opacity="0.08"/>
+        <line x1="94"  y1="410" x2="140" y2="320" stroke="#0B2E6D" stroke-width="1" stroke-dasharray="3 4" opacity="0.06"/>
+      </svg>
+
+      <!-- Floating metric card A -->
+      <div class="hmetric hm-a">
+        <div class="hm-tag">Assessment Summary</div>
+        <div class="hm-val">14 Findings</div>
+        <div class="hm-sub">All manually verified</div>
+        <div class="hm-badges">
+          <span class="hm-badge hb-c">3 Critical</span>
+          <span class="hm-badge hb-h">4 High</span>
+          <span class="hm-badge hb-m">7 Medium</span>
         </div>
       </div>
-      <div class="hero-card hero-card-b">
-        <div class="c-label">Delivery Status</div>
-        <div class="c-value">Report Ready</div>
-        <div class="c-sub">48h from kickoff &middot; Full CVSS scoring</div>
+
+      <!-- Floating metric card B -->
+      <div class="hmetric hm-b">
+        <div class="hm-verified">
+          <div class="hm-icon">
+            <svg viewBox="0 0 24 24"><polyline points="4,12 9,17 20,6"/></svg>
+          </div>
+          <div>
+            <div class="hm-tag">Report Delivered</div>
+            <div class="hm-val">48h Turnaround</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TICKER STRIP -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span class="ticker-item">OWASP Top 10<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Manual Penetration Testing<span class="ticker-sep"></span></span>
+    <span class="ticker-item">CVSS v3.1 Scoring<span class="ticker-sep"></span></span>
+    <span class="ticker-item">API Security Testing<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Zero False Positives<span class="ticker-sep"></span></span>
+    <span class="ticker-item">NDA Protected<span class="ticker-sep"></span></span>
+    <span class="ticker-item">BOLA &amp; BFLA Testing<span class="ticker-sep"></span></span>
+    <span class="ticker-item">48-Hour Delivery<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Investor-Ready Reports<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Global Remote Delivery<span class="ticker-sep"></span></span>
+    <!-- duplicate for seamless loop -->
+    <span class="ticker-item">OWASP Top 10<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Manual Penetration Testing<span class="ticker-sep"></span></span>
+    <span class="ticker-item">CVSS v3.1 Scoring<span class="ticker-sep"></span></span>
+    <span class="ticker-item">API Security Testing<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Zero False Positives<span class="ticker-sep"></span></span>
+    <span class="ticker-item">NDA Protected<span class="ticker-sep"></span></span>
+    <span class="ticker-item">BOLA &amp; BFLA Testing<span class="ticker-sep"></span></span>
+    <span class="ticker-item">48-Hour Delivery<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Investor-Ready Reports<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Global Remote Delivery<span class="ticker-sep"></span></span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="section bg-off">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="tag reveal"><span>Services</span></div>
+      <h2 class="section-title reveal">Assessment &amp; Reporting<br>Built for Startups</h2>
+      <p class="section-sub reveal">Manual vulnerability testing aligned to OWASP, PTES, and NIST &mdash; delivered with documentation your team can actually use.</p>
+    </div>
+    <div class="service-cards stagger">
+      <div class="service-card reveal">
+        <div class="sc-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Web Application Assessment</h3>
+        <p>Full OWASP Top 10 coverage, authentication flows, access control, injection points, and configuration review. Every finding manually verified and CVSS-scored.</p>
+        <a href="services.html" class="card-link">Learn more <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
+      </div>
+      <div class="service-card reveal">
+        <div class="sc-icon">
+          <svg viewBox="0 0 24 24"><polyline points="4,17 10,11 4,5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+        </div>
+        <h3>API Security Assessment</h3>
+        <p>Deep testing of REST and GraphQL endpoints &mdash; auth bypass, BOLA, BFLA, injection, rate limiting, and data exposure. APIs are the most common attack surface for funded startups.</p>
+        <a href="services.html" class="card-link">Learn more <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
+      </div>
+      <div class="service-card reveal">
+        <div class="sc-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="8,21 12,17 16,21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3>Investor-Ready Security Report</h3>
+        <p>Executive risk summary, CVSS-scored findings, and compliance gap indicators formatted for investor and enterprise due diligence. Built for founders approaching Series A.</p>
+        <a href="services.html" class="card-link">Learn more <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- TICKER STRIP -->
-<div class="strip">
-  <div class="strip-track">
-    <span class="strip-item">OWASP Top 10 <span class="strip-dot">&middot;</span></span>
-    <span class="strip-item">SQL Injection <span class="strip-dot">&middot;</span></span>
-    <span class="strip-item">Cross-Site Scripting <span class="strip-dot">&middot;</span></span>
-    <span class="strip-item">Authentication Bypass <span class="strip-dot">&middot;</span></span>
-    <span class="strip-item">CVSS v3.1 Scoring <span class="strip-dot">&middot;</span></span>
-    <span class="strip-item">API Security Testing <span class="strip-dot">&middot;</span></span>
-    <span class="strip-item">IDOR Testing <span class="strip-dot">&middot;</span></span>
-    <span class="strip-item">Business Logic Flaws <span class="strip-dot">&middot;</span></span>
-    <span class="strip-item">Manual Verification <span class="strip-dot">&middot;</span></span>
-    <span class="strip-item">Secure &middot; Defend &middot; Evolve <span class="strip-dot">&middot;</span></span>
-    <span class="strip-item">OWASP Top 10 <span class="strip-dot">&middot;</span></span>
-    <span class="strip-item">SQL Injection <span class="strip-dot">&middot;</span></span>
-    <span class="strip-item">Cross-Site Scripting <span class="strip-dot">&middot;</span></span>
-    <span class="strip-item">Authentication Bypass <span class="strip-dot">&middot;</span></span>
-    <span class="strip-item">CVSS v3.1 Scoring <span class="strip-dot">&middot;</span></span>
-    <span class="strip-item">API Security Testing <span class="strip-dot">&middot;</span></span>
-    <span class="strip-item">IDOR Testing <span class="strip-dot">&middot;</span></span>
-    <span class="strip-item">Business Logic Flaws <span class="strip-dot">&middot;</span></span>
-    <span class="strip-item">Manual Verification <span class="strip-dot">&middot;</span></span>
-    <span class="strip-item">Secure &middot; Defend &middot; Evolve <span class="strip-dot">&middot;</span></span>
-  </div>
-</div>
-
-<!-- SERVICE OVERVIEW -->
-<section class="section-wrap">
-  <div class="section-head">
-    <div class="eyebrow">
-      <div class="eyebrow-bar"></div>
-      <span>What We Do</span>
+<!-- WHY VAULTIFY -->
+<section class="section bg-white">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="tag reveal"><span>Why Vaultify</span></div>
+      <h2 class="section-title reveal">Enterprise-Grade Testing.<br>Startup-Accessible Pricing.</h2>
     </div>
-    <h2 class="section-title">Web Application<br>Vulnerability Assessment</h2>
-    <p class="section-sub">We specialise in one discipline and execute it with precision. Every engagement is thorough, documented, and delivered with clear next steps your team can act on.</p>
-  </div>
-
-  <div class="svc-split">
-    <div>
-      <div class="svc-flag">Core Engagement</div>
-      <h3 class="svc-h2">Find Every Weakness Before an Attacker Does</h3>
-      <p class="svc-desc">Our assessment combines automated scanning with deep manual testing &mdash; covering authentication, injection, access control, business logic, and more. Every finding is verified by a certified analyst. Zero false positives.</p>
-      <div class="check-list">
-        <div class="check-item">
-          <div class="check-ico"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#1B2F6B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <span>Full OWASP Top 10 &mdash; injection, XSS, broken auth, misconfigurations and more</span>
-        </div>
-        <div class="check-item">
-          <div class="check-ico"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#1B2F6B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <span>Manual verification of all automated findings &mdash; no false positives in your report</span>
-        </div>
-        <div class="check-item">
-          <div class="check-ico"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#1B2F6B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <span>CVSS v3.1 risk scoring &mdash; Critical / High / Medium / Low / Informational</span>
-        </div>
-        <div class="check-item">
-          <div class="check-ico"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#1B2F6B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <span>Executive summary + full technical appendix + clear remediation guide</span>
-        </div>
-        <div class="check-item">
-          <div class="check-ico"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#1B2F6B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <span>Two weeks of post-delivery remediation support at no additional cost</span>
-        </div>
-        <div class="check-item">
-          <div class="check-ico"><svg viewBox="0 0 10 10" fill="none"><polyline points="1,5 4,8 9,2" stroke="#1B2F6B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <span>Mutual NDA signed before any work begins &mdash; full confidentiality guaranteed</span>
-        </div>
+    <div class="why-grid stagger">
+      <div class="why-card reveal">
+        <div class="why-num">01 &mdash; Precision</div>
+        <h4>Zero False Positives</h4>
+        <p>Every vulnerability in your report has been manually confirmed. We eliminate automated tool noise before it reaches you.</p>
       </div>
-      <p class="svc-note">All engagements are quoted individually based on scope. Contact us for a proposal tailored to your application.</p>
-      <a href="contact.html" class="btn-primary">Request a Proposal</a>
-    </div>
-
-    <div class="terminal">
-      <div class="term-bar">
-        <div class="td td-r"></div>
-        <div class="td td-y"></div>
-        <div class="td td-g"></div>
-        <span class="term-title">vaultify-assessment &mdash; live-scan</span>
+      <div class="why-card reveal">
+        <div class="why-num">02 &mdash; Speed</div>
+        <h4>48-Hour Delivery</h4>
+        <p>Reports delivered in 48 hours from engagement start. Clear timelines agreed upfront &mdash; no ambiguity, no delays.</p>
       </div>
-      <div class="term-body">
-        <div><span class="tp">$</span> <span class="tc">./vscan --target client.app --mode full-manual</span></div>
-        <span class="ti">[ INFO ] Initialising assessment engine</span>
-        <span class="ti">[ INFO ] Loading OWASP Top 10 v2023 ruleset</span>
-        <span class="ti">[ SCAN ] Spidering application... 247 endpoints</span>
-        <span class="ti">[ AUTH ] Testing authenticated session flows</span>
-        <span class="tdv">  &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</span>
-        <span class="te">[ CRIT ] A01:2021 Broken Access Control &mdash; CVSS 9.8</span>
-        <span class="te">[ HIGH ] A03:2021 SQL Injection /api/search &mdash; CVSS 8.6</span>
-        <span class="tw">[ HIGH ] A07:2021 Auth bypass /admin &mdash; CVSS 7.5</span>
-        <span class="tw">[ MED  ] A05:2021 Security misconfiguration &mdash; CVSS 5.3</span>
-        <span class="tw">[ MED  ] A02:2021 Weak session tokens &mdash; CVSS 4.8</span>
-        <span class="tdv">  &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</span>
-        <span class="tok">[ DONE ] 14 findings | 2 Critical | 4 High | 8 Med/Low</span>
-        <span class="tok">[ DONE ] Manual verification complete &mdash; 0 false positives</span>
-        <span class="tok">[ DONE ] Report generated: assessment_report.pdf</span>
-        <span class="ti">[ INFO ] Delivery: within 48 hours of engagement start</span>
-        <div style="margin-top:4px;"><span class="tp">$</span> <span class="tcur"></span></div>
+      <div class="why-card reveal">
+        <div class="why-num">03 &mdash; Confidentiality</div>
+        <h4>NDA Before Everything</h4>
+        <p>A mutual NDA is signed before we discuss your application. All client data is permanently deleted 30 days post-engagement.</p>
       </div>
-    </div>
-  </div>
-
-  <div class="method-grid">
-    <div class="method-card">
-      <div class="m-step">01 &mdash; Reconnaissance</div>
-      <h4>Passive Information Gathering</h4>
-      <p>DNS enumeration, technology fingerprinting, and subdomain discovery. We map the full attack surface before any active testing begins.</p>
-    </div>
-    <div class="method-card">
-      <div class="m-step">02 &mdash; Automated Scanning</div>
-      <h4>Comprehensive Tool-Based Testing</h4>
-      <p>Burp Suite Professional and OWASP ZAP across all discovered endpoints. Authenticated and unauthenticated sessions tested separately.</p>
-    </div>
-    <div class="method-card">
-      <div class="m-step">03 &mdash; Manual Verification</div>
-      <h4>Analyst-Led Deep Testing</h4>
-      <p>Every automated finding is manually confirmed. Business logic flaws, IDOR vulnerabilities, and chained attack paths that tools cannot detect.</p>
-    </div>
-    <div class="method-card">
-      <div class="m-step">04 &mdash; Risk Scoring</div>
-      <h4>CVSS v3.1 Prioritisation</h4>
-      <p>Every finding scored with Base Score, Vector String, and exploitability metrics. Prioritised by real-world risk &mdash; not scanner output volume.</p>
-    </div>
-    <div class="method-card">
-      <div class="m-step">05 &mdash; Reporting</div>
-      <h4>Dual-Layer Documentation</h4>
-      <p>One report, two audiences. Executive summary for leadership. Full technical appendix with proof-of-concept evidence for your development team.</p>
-    </div>
-    <div class="method-card">
-      <div class="m-step">06 &mdash; Support</div>
-      <h4>Post-Delivery Remediation</h4>
-      <p>Two weeks of direct Q&amp;A support after delivery. We answer your team's questions on every finding until the fixes are in place.</p>
+      <div class="why-card reveal">
+        <div class="why-num">04 &mdash; Clarity</div>
+        <h4>Reports People Can Act On</h4>
+        <p>Executive summary for leadership. Technical detail for developers. One report that drives action across your entire team.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- PROCESS -->
-<section class="section-wrap bg-off">
-  <div class="section-head">
-    <div class="eyebrow">
-      <div class="eyebrow-bar"></div>
-      <span>How It Works</span>
+<section class="section bg-off">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="tag reveal"><span>How It Works</span></div>
+      <h2 class="section-title reveal">From Enquiry to Report<br>in Four Steps</h2>
     </div>
-    <h2 class="section-title">Simple, Transparent Process</h2>
-    <p class="section-sub">From first contact to final report &mdash; you always know what is happening and what comes next.</p>
-  </div>
-  <div class="process-grid">
-    <div class="process-step">
-      <div class="ps-num">01</div>
-      <div class="ps-bar"></div>
-      <h3>Free Discovery Call</h3>
-      <p>Tell us about your application, stack, and concerns. We run a complimentary passive review of your domain beforehand &mdash; so the conversation starts with real data.</p>
-    </div>
-    <div class="process-step">
-      <div class="ps-num">02</div>
-      <div class="ps-bar"></div>
-      <h3>Scoped Proposal</h3>
-      <p>We send a clear proposal within 24 hours &mdash; exact scope, methodology, deliverables, and a fixed engagement fee. Nothing ambiguous.</p>
-    </div>
-    <div class="process-step">
-      <div class="ps-num">03</div>
-      <div class="ps-bar"></div>
-      <h3>NDA &amp; Kickoff</h3>
-      <p>Mutual NDA signed before any work begins. 50% deposit to commence. You receive progress updates throughout the engagement.</p>
-    </div>
-    <div class="process-step">
-      <div class="ps-num">04</div>
-      <div class="ps-bar"></div>
-      <h3>Report &amp; Support</h3>
-      <p>Full CVSS-scored report within 48&ndash;72 hours. Two weeks of free remediation support included. Optional retest after fixes applied.</p>
-    </div>
-  </div>
-</section>
-
-<!-- WHY -->
-<section class="section-wrap">
-  <div class="section-head">
-    <div class="eyebrow">
-      <div class="eyebrow-bar"></div>
-      <span>Why Vaultify</span>
-    </div>
-    <h2 class="section-title">Built for Businesses<br>That Cannot Afford a Breach</h2>
-  </div>
-  <div class="why-split">
-    <div class="why-list">
-      <div class="why-item">
-        <span class="why-num">01</span>
-        <div>
-          <h4>Specialist Focus</h4>
-          <p>We do one thing &mdash; web application vulnerability assessment. Not a generalist IT firm doing security on the side. Our entire process, tooling, and team is built around this single discipline.</p>
-        </div>
+    <div class="process-steps stagger">
+      <div class="process-step reveal">
+        <div class="ps-num">01</div>
+        <div class="ps-rule"></div>
+        <h3>Free Passive Review</h3>
+        <p>Before we speak, we run a complimentary passive review of your domain &mdash; DNS, SSL, public headers, and known CVEs.</p>
       </div>
-      <div class="why-item">
-        <span class="why-num">02</span>
-        <div>
-          <h4>Zero False Positives</h4>
-          <p>Every automated finding is manually verified by a certified analyst before it appears in your report. Your developers spend time fixing real vulnerabilities &mdash; not chasing scanner noise.</p>
-        </div>
+      <div class="process-step reveal">
+        <div class="ps-num">02</div>
+        <div class="ps-rule"></div>
+        <h3>Scope &amp; Proposal</h3>
+        <p>We agree exact deliverables based on your application size. Fixed fee, no surprises. NDA signed before details are shared.</p>
       </div>
-      <div class="why-item">
-        <span class="why-num">03</span>
-        <div>
-          <h4>Fixed Scope, Clear Price</h4>
-          <p>No hourly billing. No retainer surprises. We agree on scope and price, then deliver exactly what was promised. Every time.</p>
-        </div>
+      <div class="process-step reveal">
+        <div class="ps-num">03</div>
+        <div class="ps-rule"></div>
+        <h3>Assessment</h3>
+        <p>Manual and automated testing across all agreed vectors. Every finding verified before it enters your report.</p>
       </div>
-      <div class="why-item">
-        <span class="why-num">04</span>
-        <div>
-          <h4>Strict Confidentiality</h4>
-          <p>Mutual NDA signed before any work begins. All vulnerability data stored in encrypted, access-controlled environments. Client data permanently deleted 30 days after project completion.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="threat-panel">
-      <div class="tp-head">
-        <span class="tp-title">OWASP Risk Index 2023</span>
-        <div class="live-pill"><span class="live-dot"></span>Live</div>
-      </div>
-      <div class="t-row">
-        <span class="t-name">A01 &mdash; Broken Access Control</span>
-        <div class="t-bar-wrap"><div class="t-bar" style="width:98%;background:#CC2200;"></div></div>
-        <span class="t-score sc-c">9.8</span>
-      </div>
-      <div class="t-row">
-        <span class="t-name">A03 &mdash; Injection Attacks</span>
-        <div class="t-bar-wrap"><div class="t-bar" style="width:88%;background:#B05500;"></div></div>
-        <span class="t-score sc-h">8.8</span>
-      </div>
-      <div class="t-row">
-        <span class="t-name">A02 &mdash; Cryptographic Failures</span>
-        <div class="t-bar-wrap"><div class="t-bar" style="width:79%;background:#B05500;"></div></div>
-        <span class="t-score sc-h">7.9</span>
-      </div>
-      <div class="t-row">
-        <span class="t-name">A07 &mdash; Auth &amp; Session Failures</span>
-        <div class="t-bar-wrap"><div class="t-bar" style="width:75%;background:#B05500;"></div></div>
-        <span class="t-score sc-h">7.5</span>
-      </div>
-      <div class="t-row">
-        <span class="t-name">A05 &mdash; Security Misconfiguration</span>
-        <div class="t-bar-wrap"><div class="t-bar" style="width:68%;background:#856900;"></div></div>
-        <span class="t-score sc-m">6.8</span>
-      </div>
-      <div class="t-row">
-        <span class="t-name">A06 &mdash; Outdated Components</span>
-        <div class="t-bar-wrap"><div class="t-bar" style="width:55%;background:#856900;"></div></div>
-        <span class="t-score sc-m">5.5</span>
-      </div>
-      <div class="t-row">
-        <span class="t-name">A09 &mdash; Security Logging Failures</span>
-        <div class="t-bar-wrap"><div class="t-bar" style="width:42%;background:#228822;"></div></div>
-        <span class="t-score sc-l">4.2</span>
-      </div>
-      <div class="tp-foot">
-        <span>Source: OWASP Top 10 2023 &middot; owasp.org</span>
+      <div class="process-step reveal">
+        <div class="ps-num">04</div>
+        <div class="ps-rule"></div>
+        <h3>Report &amp; Support</h3>
+        <p>Full findings report delivered in 48 hours, followed by two weeks of remediation support at no additional cost.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
-<section class="section-wrap bg-navy">
-  <div class="cta-block">
-    <div class="eyebrow" style="justify-content:center;">
-      <div class="eyebrow-bar white"></div>
-      <span class="white">Get Started</span>
-      <div class="eyebrow-bar white"></div>
-    </div>
-    <h2 class="section-title white">Ready to See What<br>Your Application Exposes?</h2>
-    <p class="section-sub white">Start with a free 30-minute discovery call. We review your public-facing infrastructure before we speak &mdash; so you arrive with real findings, not hypotheticals.</p>
-    <div class="cta-group">
-      <a href="contact.html" class="btn-white">Request Free Discovery Call</a>
-      <a href="services.html" class="btn-ghost">View Services</a>
+<section class="section bg-navy">
+  <div class="section-inner">
+    <div class="cta-box reveal">
+      <div class="tag" style="background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.15);margin:0 auto 24px">
+        <span style="color:rgba(255,255,255,.85)">Get Started</span>
+      </div>
+      <h2 class="section-title white">Not Sure What<br>Your Application Needs?</h2>
+      <p class="section-sub white">Book a free discovery call. We review your public infrastructure before we speak &mdash; and come with something concrete to discuss.</p>
+      <a href="contact.html" class="btn-white-lg" style="margin-top:8px">Book Free Discovery Call
+        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-grid">
     <div>
-      <img src="logo.png" alt="Vaultify Solutions" class="footer-logo">
-      <p class="footer-about">Specialist web application vulnerability assessment for startups and growing businesses. Chennai, India &mdash; working globally.</p>
+      <div class="footer-logo-row">
+        <img src="logo.png" alt="Vaultify Solutions">
+        <div class="footer-logo-sep"></div>
+        <div class="footer-brand-text">
+          <div class="footer-brand-name">Vaultify</div>
+          <span class="footer-brand-sub">Solutions</span>
+        </div>
+      </div>
+      <p class="footer-desc">Specialist web application vulnerability assessment for startups and growing businesses. Chennai, India &mdash; working globally.</p>
     </div>
     <div>
       <div class="f-col-head">Navigation</div>
@@ -401,6 +325,6 @@
   </div>
 </footer>
 
-<script src="nav.js"></script>
+<script src="main.js"></script>
 </body>
 </html>

@@ -4,25 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services &mdash; Vaultify Solutions</title>
-  <meta name="description" content="Web application vulnerability assessment, API security testing, and investor-ready security reports. Professional cybersecurity for startups and SMBs.">
   <link rel="icon" href="logo.png" type="image/png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- NAV -->
 <nav id="navbar">
   <a href="index.html" class="nav-logo">
     <img src="logo.png" alt="Vaultify Solutions">
+    <div class="nav-logo-sep"></div>
     <div class="nav-logo-text">
-      <span class="nav-logo-name">VAULTIFY</span>
-      <span class="nav-logo-sub">SOLUTIONS</span>
+      <span class="nav-brand">Vaultify</span>
+      <span class="nav-brand-sub">Solutions</span>
     </div>
   </a>
   <ul class="nav-links">
     <li><a href="services.html">Services</a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href="contact.html" class="nav-cta">Get in Touch</a></li>
+    <li><a href="contact.html" class="nav-btn">Get in Touch</a></li>
   </ul>
   <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
     <span></span><span></span><span></span>
@@ -35,155 +34,196 @@
 </div>
 
 <!-- PAGE HERO -->
-<section class="page-hero">
-  <div class="eyebrow">
-    <div class="eyebrow-bar"></div>
-    <span>Our Services</span>
+<div class="page-top">
+  <div class="page-top-inner">
+    <div class="tag reveal"><span>Our Services</span></div>
+    <h1 class="reveal">What We <strong>Deliver</strong></h1>
+    <p class="reveal">Every engagement is scoped clearly, executed thoroughly, and delivered with documentation your entire team can use. No ambiguity &mdash; from kickoff to final report.</p>
   </div>
-  <h1>What We <em>Deliver</em></h1>
-  <p>Every engagement is scoped clearly, executed thoroughly, and delivered with documentation your entire team can use. No ambiguity &mdash; from kickoff to final report.</p>
+</div>
+
+<!-- SERVICE CARDS OVERVIEW -->
+<section class="section bg-white">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="tag reveal"><span>Service Overview</span></div>
+      <h2 class="section-title reveal">Three Focused Offerings</h2>
+      <p class="section-sub reveal">Each scoped to your exact requirements and delivered with the same zero-false-positive guarantee.</p>
+    </div>
+    <div class="service-cards stagger">
+      <div class="service-card reveal">
+        <div class="sc-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Web Application Assessment</h3>
+        <p>Systematic automated and manual testing covering all OWASP Top 10 categories, authentication flows, access control, injection points, and configuration issues.</p>
+        <a href="#svc-01" class="card-link">View details <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
+      </div>
+      <div class="service-card reveal">
+        <div class="sc-icon">
+          <svg viewBox="0 0 24 24"><polyline points="4,17 10,11 4,5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+        </div>
+        <h3>API Security Assessment</h3>
+        <p>Deep testing of REST and GraphQL API endpoints &mdash; auth bypass, BOLA, BFLA, injection, rate limiting gaps, and sensitive data exposure.</p>
+        <a href="#svc-02" class="card-link">View details <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
+      </div>
+      <div class="service-card reveal">
+        <div class="sc-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="8,21 12,17 16,21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3>Investor-Ready Report</h3>
+        <p>A consolidated security posture document for investor or enterprise due diligence. Executive risk summary, CVSS findings, roadmap, and compliance gap indicators.</p>
+        <a href="#svc-03" class="card-link">View details <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- SERVICE DETAILS -->
-<section class="section-wrap">
-  <div class="section-head">
-    <div class="eyebrow">
-      <div class="eyebrow-bar"></div>
-      <span>Service Details</span>
-    </div>
-    <h2 class="section-title">Assessment &amp;<br>Reporting Services</h2>
-  </div>
-
-  <div class="svc-list">
-    <div class="svc-row">
-      <div>
-        <div class="sr-idx">Service 01</div>
-        <div class="sr-title">Web Application Vulnerability Assessment</div>
-        <div class="sr-tags" style="margin-top:10px;">
-          <span class="sr-tag">OWASP Top 10</span>
-          <span class="sr-tag">Manual Testing</span>
-          <span class="sr-tag">CVSS Scoring</span>
-        </div>
-      </div>
-      <div>
-        <p class="sr-desc">Systematic automated and manual testing of your web application &mdash; covering all OWASP Top 10 categories, authentication flows, access control, injection points, and configuration issues. Every finding is manually verified, risk-scored, and documented with a clear remediation path. Delivered within 48&ndash;72 hours of kickoff.</p>
-        <div class="deliverables">
-          <span class="deliverable">Executive Summary</span>
-          <span class="deliverable">Full Findings Report</span>
-          <span class="deliverable">CVSS Risk Scoring</span>
-          <span class="deliverable">Evidence Screenshots</span>
-          <span class="deliverable">Remediation Guide</span>
-          <span class="deliverable">2 Weeks Support</span>
-        </div>
-      </div>
+<!-- SERVICE DETAIL LIST -->
+<section class="section bg-off">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="tag reveal"><span>Service Details</span></div>
+      <h2 class="section-title reveal">Assessment &amp;<br>Reporting Services</h2>
+      <p class="section-sub reveal">What each engagement covers, what you receive, and what it is designed to accomplish.</p>
     </div>
 
-    <div class="svc-row">
-      <div>
-        <div class="sr-idx">Service 02</div>
-        <div class="sr-title">API Security Assessment</div>
-        <div class="sr-tags" style="margin-top:10px;">
-          <span class="sr-tag">REST</span>
-          <span class="sr-tag">GraphQL</span>
-          <span class="sr-tag">Auth Testing</span>
-          <span class="sr-tag">BOLA/BFLA</span>
-        </div>
-      </div>
-      <div>
-        <p class="sr-desc">Deep security testing of REST and GraphQL API endpoints &mdash; authentication bypass, broken object level authorisation (BOLA), broken function level authorisation (BFLA), injection vulnerabilities, rate limiting gaps, and sensitive data exposure. APIs are the most common attack surface for funded startups. Delivered standalone or alongside a web app assessment.</p>
-        <div class="deliverables">
-          <span class="deliverable">Auth Layer Review</span>
-          <span class="deliverable">BOLA/BFLA Testing</span>
-          <span class="deliverable">Injection Testing</span>
-          <span class="deliverable">Rate Limit Review</span>
-          <span class="deliverable">Data Exposure Report</span>
-        </div>
-      </div>
-    </div>
+    <div class="svc-detail-list">
 
-    <div class="svc-row">
-      <div>
-        <div class="sr-idx">Service 03</div>
-        <div class="sr-title">Investor-Ready Security Report</div>
-        <div class="sr-tags" style="margin-top:10px;">
-          <span class="sr-tag">Due Diligence</span>
-          <span class="sr-tag">Series A</span>
-          <span class="sr-tag">Board-Ready</span>
+      <div class="svc-detail-row reveal" id="svc-01">
+        <div>
+          <div class="sdr-idx">Service 01</div>
+          <div class="sdr-title">Web Application Vulnerability Assessment</div>
+          <div class="sdr-tags">
+            <span class="sdr-tag">OWASP Top 10</span>
+            <span class="sdr-tag">Manual Testing</span>
+            <span class="sdr-tag">CVSS Scoring</span>
+          </div>
+        </div>
+        <div>
+          <p class="sdr-desc">Systematic automated and manual testing covering all OWASP Top 10 categories, authentication flows, access control, injection points, session management, and configuration issues. Every finding is manually verified and CVSS v3.1 scored before it appears in your report. Zero false positives guaranteed.</p>
+          <div class="deliverables">
+            <span class="deliverable">Executive Summary</span>
+            <span class="deliverable">Full Findings Report</span>
+            <span class="deliverable">CVSS Risk Scoring</span>
+            <span class="deliverable">Remediation Guide</span>
+            <span class="deliverable">2 Weeks Support</span>
+          </div>
         </div>
       </div>
-      <div>
-        <p class="sr-desc">A consolidated security posture document designed for investor or enterprise due diligence. Combines all assessment findings into a single board-readable report &mdash; executive risk summary, CVSS-scored findings, remediation roadmap, and compliance gap indicators. Designed for founders preparing for Series A or enterprise client onboarding.</p>
-        <div class="deliverables">
-          <span class="deliverable">Risk Executive Summary</span>
-          <span class="deliverable">CVSS Risk Matrix</span>
-          <span class="deliverable">Compliance Gap Summary</span>
-          <span class="deliverable">Remediation Roadmap</span>
+
+      <div class="svc-detail-row reveal" id="svc-02">
+        <div>
+          <div class="sdr-idx">Service 02</div>
+          <div class="sdr-title">API Security Assessment</div>
+          <div class="sdr-tags">
+            <span class="sdr-tag">REST</span>
+            <span class="sdr-tag">GraphQL</span>
+            <span class="sdr-tag">BOLA/BFLA</span>
+            <span class="sdr-tag">Auth Testing</span>
+          </div>
+        </div>
+        <div>
+          <p class="sdr-desc">Deep testing of REST and GraphQL API endpoints &mdash; authentication bypass, BOLA (Broken Object Level Authorization), BFLA (Broken Function Level Authorization), injection vulnerabilities, rate limiting gaps, and sensitive data exposure. APIs are the most common and most exploited attack surface for funded startups. Every endpoint tested, every auth flow probed.</p>
+          <div class="deliverables">
+            <span class="deliverable">Auth Layer Review</span>
+            <span class="deliverable">BOLA/BFLA Testing</span>
+            <span class="deliverable">Rate Limit Review</span>
+            <span class="deliverable">Data Exposure Report</span>
+          </div>
         </div>
       </div>
+
+      <div class="svc-detail-row reveal" id="svc-03">
+        <div>
+          <div class="sdr-idx">Service 03</div>
+          <div class="sdr-title">Investor-Ready Security Report</div>
+          <div class="sdr-tags">
+            <span class="sdr-tag">Due Diligence</span>
+            <span class="sdr-tag">Series A</span>
+            <span class="sdr-tag">Board-Ready</span>
+          </div>
+        </div>
+        <div>
+          <p class="sdr-desc">A consolidated security posture document for investor or enterprise due diligence. Executive risk summary, CVSS-scored findings, remediation roadmap, and compliance gap indicators. Designed for founders preparing for Series A or responding to enterprise security questionnaires. Includes both technical appendix and board-level narrative.</p>
+          <div class="deliverables">
+            <span class="deliverable">Risk Executive Summary</span>
+            <span class="deliverable">CVSS Risk Matrix</span>
+            <span class="deliverable">Compliance Gap Summary</span>
+            <span class="deliverable">Remediation Roadmap</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
 <!-- ENGAGEMENT MODEL -->
-<section class="section-wrap bg-off">
-  <div class="section-head">
-    <div class="eyebrow">
-      <div class="eyebrow-bar"></div>
-      <span>Engagement Model</span>
+<section class="section bg-white">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="tag reveal"><span>Engagement Model</span></div>
+      <h2 class="section-title reveal">How We Engage</h2>
+      <p class="section-sub reveal">No off-the-shelf packages. Every engagement is scoped to your actual application and requirements. We&rsquo;ll send a clear proposal within 24 hours.</p>
     </div>
-    <h2 class="section-title">How We Engage</h2>
-    <p class="section-sub">We don&rsquo;t offer off-the-shelf packages. Every engagement is scoped to your actual application and requirements. Contact us and we&rsquo;ll send a clear proposal within 24 hours.</p>
-  </div>
-  <div class="process-grid">
-    <div class="process-step">
-      <div class="ps-num">01</div>
-      <div class="ps-bar"></div>
-      <h3>Scoped to Your App</h3>
-      <p>Proposals are based on your actual application size and complexity &mdash; not generic tiers. You pay for what your application actually needs.</p>
-    </div>
-    <div class="process-step">
-      <div class="ps-num">02</div>
-      <div class="ps-bar"></div>
-      <h3>Fixed Fee, No Surprises</h3>
-      <p>Once scope is agreed, the price is fixed. No hourly billing, no scope creep charges, no retainer requirements.</p>
-    </div>
-    <div class="process-step">
-      <div class="ps-num">03</div>
-      <div class="ps-bar"></div>
-      <h3>NDA Before Anything</h3>
-      <p>A mutual NDA is signed before we discuss your application in detail. Your architecture and vulnerabilities are protected from the first conversation.</p>
-    </div>
-    <div class="process-step">
-      <div class="ps-num">04</div>
-      <div class="ps-bar"></div>
-      <h3>50/50 Payment Terms</h3>
-      <p>50% on engagement start, 50% on report delivery. Work begins immediately once the commencement payment is received.</p>
+    <div class="process-steps stagger">
+      <div class="process-step reveal">
+        <div class="ps-num">01</div>
+        <div class="ps-rule"></div>
+        <h3>Scoped to Your App</h3>
+        <p>Proposals based on your actual application size and complexity &mdash; not generic tiers. You pay for what your application actually needs.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="ps-num">02</div>
+        <div class="ps-rule"></div>
+        <h3>Fixed Fee, No Surprises</h3>
+        <p>Once scope is agreed, the price is fixed. No hourly billing, no scope creep charges, no retainer requirements.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="ps-num">03</div>
+        <div class="ps-rule"></div>
+        <h3>NDA Before Anything</h3>
+        <p>A mutual NDA is signed before we discuss your application in detail. Your architecture and vulnerabilities are protected from the first conversation.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="ps-num">04</div>
+        <div class="ps-rule"></div>
+        <h3>50/50 Payment Terms</h3>
+        <p>50% on engagement start, 50% on report delivery. Work begins immediately once the commencement payment is received.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
-<section class="section-wrap bg-navy">
-  <div class="cta-block">
-    <div class="eyebrow" style="justify-content:center;">
-      <div class="eyebrow-bar white"></div>
-      <span class="white">Get a Proposal</span>
-      <div class="eyebrow-bar white"></div>
-    </div>
-    <h2 class="section-title white">Not Sure What<br>Your Application Needs?</h2>
-    <p class="section-sub white">Book a free discovery call. We&rsquo;ll review what you have, tell you what we recommend, and send a clear proposal within 24 hours.</p>
-    <div class="cta-group">
-      <a href="contact.html" class="btn-white">Book Free Call</a>
+<section class="section bg-navy">
+  <div class="section-inner">
+    <div class="cta-box reveal">
+      <div class="tag" style="background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.15);margin:0 auto 24px">
+        <span style="color:rgba(255,255,255,.85)">Get a Proposal</span>
+      </div>
+      <h2 class="section-title white">Not Sure What<br>Your Application Needs?</h2>
+      <p class="section-sub white">Book a free discovery call. We&rsquo;ll review what you have, tell you what we recommend, and send a clear proposal within 24 hours.</p>
+      <a href="contact.html" class="btn-white-lg" style="margin-top:8px">Book Free Call
+        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-grid">
     <div>
-      <img src="logo.png" alt="Vaultify Solutions" class="footer-logo">
-      <p class="footer-about">Specialist web application vulnerability assessment for startups and growing businesses. Chennai, India &mdash; working globally.</p>
+      <div class="footer-logo-row">
+        <img src="logo.png" alt="Vaultify Solutions">
+        <div class="footer-logo-sep"></div>
+        <div class="footer-brand-text">
+          <div class="footer-brand-name">Vaultify</div>
+          <span class="footer-brand-sub">Solutions</span>
+        </div>
+      </div>
+      <p class="footer-desc">Specialist web application vulnerability assessment for startups and growing businesses. Chennai, India &mdash; working globally.</p>
     </div>
     <div>
       <div class="f-col-head">Navigation</div>
@@ -208,6 +248,6 @@
   </div>
 </footer>
 
-<script src="nav.js"></script>
+<script src="main.js"></script>
 </body>
 </html>

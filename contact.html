@@ -4,25 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact &mdash; Vaultify Solutions</title>
-  <meta name="description" content="Get in touch with Vaultify Solutions. Book a free discovery call or request a web application security assessment proposal.">
   <link rel="icon" href="logo.png" type="image/png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- NAV -->
 <nav id="navbar">
   <a href="index.html" class="nav-logo">
     <img src="logo.png" alt="Vaultify Solutions">
+    <div class="nav-logo-sep"></div>
     <div class="nav-logo-text">
-      <span class="nav-logo-name">VAULTIFY</span>
-      <span class="nav-logo-sub">SOLUTIONS</span>
+      <span class="nav-brand">Vaultify</span>
+      <span class="nav-brand-sub">Solutions</span>
     </div>
   </a>
   <ul class="nav-links">
     <li><a href="services.html">Services</a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href="contact.html" class="nav-cta">Get in Touch</a></li>
+    <li><a href="contact.html" class="nav-btn">Get in Touch</a></li>
   </ul>
   <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
     <span></span><span></span><span></span>
@@ -35,100 +34,110 @@
 </div>
 
 <!-- PAGE HERO -->
-<section class="page-hero">
-  <div class="eyebrow">
-    <div class="eyebrow-bar"></div>
-    <span>Contact Us</span>
+<div class="page-top">
+  <div class="page-top-inner">
+    <div class="tag reveal"><span>Contact Us</span></div>
+    <h1 class="reveal">Let&rsquo;s Talk About<br><strong>Your Security</strong></h1>
+    <p class="reveal">Fill in the form and we will respond within 24 hours with an honest assessment of what your application needs. No obligation, no upsell.</p>
   </div>
-  <h1>Let's Talk About<br><em>Your Security</em></h1>
-  <p>Fill in the form and we will respond within 24 hours with an honest assessment of what your application needs. No obligation, no upsell.</p>
-</section>
+</div>
 
-<!-- CONTACT LAYOUT -->
-<div class="contact-wrap">
+<!-- CONTACT SPLIT -->
+<div class="contact-split">
+
+  <!-- Left: info -->
   <div>
-    <h2 class="contact-h">Get in Touch</h2>
-    <p class="contact-sub">Whether you know exactly what you need or are still working it out, reach out. We'll help you figure out the right next step.</p>
+    <h2 class="contact-h reveal">Get in Touch</h2>
+    <p class="contact-sub reveal">Whether you know exactly what you need or are still working it out, reach out. We&rsquo;ll help you figure out the right next step.</p>
 
-    <div class="c-detail">
+    <div class="c-detail reveal">
       <div class="c-ico">
         <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
       </div>
       <span>consult@vaultifysolutions.com</span>
     </div>
-    <div class="c-detail">
+    <div class="c-detail reveal">
       <div class="c-ico">
         <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
       </div>
       <span>Chennai, Tamil Nadu, India &middot; Working Globally</span>
     </div>
-    <div class="c-detail">
+    <div class="c-detail reveal">
       <div class="c-ico">
         <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
       </div>
       <span>Response within 24 hours</span>
     </div>
 
-    <div class="c-promise">
+    <div class="c-promise reveal">
       <div class="c-promise-label">Free With Every Enquiry</div>
       <p>Before we speak, we run a complimentary passive security review of your domain &mdash; DNS exposure, SSL configuration, public headers, and known CVEs. You come to the call with real data in hand, not just questions.</p>
     </div>
   </div>
 
-  <div class="form-wrap">
-    <form id="contactForm" onsubmit="handleSubmit(event)">
-      <div class="form-row">
-        <div class="form-group">
-          <label class="form-label">First Name</label>
-          <input type="text" class="form-input" placeholder="John" required>
+  <!-- Right: form -->
+  <div class="reveal">
+    <div class="form-card">
+      <form id="contactForm" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">First Name</label>
+            <input type="text" class="form-input" placeholder="John" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Last Name</label>
+            <input type="text" class="form-input" placeholder="Smith" required>
+          </div>
         </div>
         <div class="form-group">
-          <label class="form-label">Last Name</label>
-          <input type="text" class="form-input" placeholder="Smith" required>
+          <label class="form-label">Business Email</label>
+          <input type="email" class="form-input" placeholder="john@company.com" required>
         </div>
+        <div class="form-group">
+          <label class="form-label">Company / Website Domain</label>
+          <input type="text" class="form-input" placeholder="company.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Service Required</label>
+          <select class="form-select" required>
+            <option value="" disabled selected>Select what you need&hellip;</option>
+            <option>Web Application Vulnerability Assessment</option>
+            <option>API Security Assessment</option>
+            <option>Web App + API (Combined)</option>
+            <option>Investor-Ready Security Report</option>
+            <option>Not sure &mdash; need guidance</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Tell Us About Your Situation</label>
+          <textarea class="form-textarea" placeholder="Describe your application, your tech stack, what concerns you, and your timeline. The more context you give, the more useful our response will be."></textarea>
+        </div>
+        <button type="submit" class="form-submit">Send Message &rarr;</button>
+      </form>
+      <div class="form-success" id="successMsg">
+        <div class="success-ico">
+          <svg viewBox="0 0 24 24"><polyline points="4,12 9,17 20,6"/></svg>
+        </div>
+        <h3>Message Received</h3>
+        <p>We will review your enquiry and respond within 24 hours with a clear assessment of what we recommend and a proposed next step.</p>
       </div>
-      <div class="form-group">
-        <label class="form-label">Business Email</label>
-        <input type="email" class="form-input" placeholder="john@company.com" required>
-      </div>
-      <div class="form-group">
-        <label class="form-label">Company / Website Domain</label>
-        <input type="text" class="form-input" placeholder="company.com">
-      </div>
-      <div class="form-group">
-        <label class="form-label">Service Required</label>
-        <select class="form-select" required>
-          <option value="" disabled selected>Select what you need...</option>
-          <option>Web Application Vulnerability Assessment</option>
-          <option>API Security Assessment</option>
-          <option>Web App + API (Combined)</option>
-          <option>Investor-Ready Security Report</option>
-          <option>Not sure &mdash; need guidance</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label class="form-label">Tell Us About Your Situation</label>
-        <textarea class="form-textarea" placeholder="Describe your application, your tech stack, what concerns you, and your timeline. The more context you give, the more useful our response will be."></textarea>
-      </div>
-      <button type="submit" class="form-submit">Send Message &rarr;</button>
-    </form>
-
-    <div class="form-success" id="successMsg">
-      <div class="success-ring">
-        <svg viewBox="0 0 24 24"><polyline points="4,12 9,17 20,6"/></svg>
-      </div>
-      <h3>Message Received</h3>
-      <p>We will review your enquiry and respond within 24 hours with a clear assessment of what we recommend and a proposed next step.</p>
     </div>
   </div>
+
 </div>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-grid">
     <div>
-      <img src="logo.png" alt="Vaultify Solutions" class="footer-logo">
-      <p class="footer-about">Specialist web application vulnerability assessment for startups and growing businesses. Chennai, India &mdash; working globally.</p>
+      <div class="footer-logo-row">
+        <img src="logo.png" alt="Vaultify Solutions">
+        <div class="footer-logo-sep"></div>
+        <div class="footer-brand-text">
+          <div class="footer-brand-name">Vaultify</div>
+          <span class="footer-brand-sub">Solutions</span>
+        </div>
+      </div>
+      <p class="footer-desc">Specialist web application vulnerability assessment for startups and growing businesses. Chennai, India &mdash; working globally.</p>
     </div>
     <div>
       <div class="f-col-head">Navigation</div>
@@ -153,7 +162,7 @@
   </div>
 </footer>
 
-<script src="nav.js"></script>
+<script src="main.js"></script>
 <script>
   function handleSubmit(e) {
     e.preventDefault();
