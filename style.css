@@ -23,6 +23,42 @@ ul { list-style: none; }
 /* NAVBAR */
 .navbar { position: fixed; top: 0; width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 0 5%; height: 80px; background: rgba(8, 11, 18, 0.85); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border-light); z-index: 1000; }
 .brand { display: flex; align-items: center; gap: 16px; }
+
+/* Logo Image Styling */
+.brand-logo { 
+  height: 42px; 
+  width: auto; 
+  object-fit: contain; 
+}
+
+/* Wordmark Typography (Pure CSS Recreation) */
+.brand-text { 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+}
+
+.brand-title { 
+  font-family: 'Inter', sans-serif; 
+  font-size: 1.4rem; 
+  font-weight: 700; 
+  letter-spacing: 0.25em; /* Creates the wide, premium spacing */
+  color: var(--text-main); 
+  line-height: 1; 
+  margin-left: 0.25em; /* Optical alignment so the text is perfectly centered */
+}
+
+.brand-subtitle { 
+  font-family: 'Inter', sans-serif; 
+  font-size: 0.65rem; 
+  font-weight: 500; 
+  letter-spacing: 0.4em; /* Even wider spacing for the subtext */
+  color: var(--accent-blue); 
+  text-transform: uppercase; 
+  margin-top: 6px; 
+  margin-left: 0.4em; 
+}
+
 .nav-links { display: flex; gap: 32px; align-items: center; }
 .nav-links a { font-size: 0.85rem; font-weight: 500; color: var(--text-silver); transition: color 0.3s; }
 .nav-links a:hover { color: var(--text-main); }
