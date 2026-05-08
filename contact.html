@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vaultify Solutions | Get in Touch</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="container-fluid">
+    <ul>
+      <li>
+        <strong>
+          <img src="logo.png" alt="Vaultify logo" style="height:32px;vertical-align:middle;margin-right:0.4rem;">
+          V&Lambda;ULTIFY <span class="tagline">Solutions</span>
+        </strong>
+      </li>
+    </ul>
+    <ul>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" role="button">Get in Touch</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main content -->
+  <main class="container">
+    <div class="grid">
+      <section>
+        <hgroup>
+          <h2>Get in Touch</h2>
+          <h3>We're here to help</h3>
+        </hgroup>
+        <p>Whether you're ready to schedule an assessment or have questions about our services, we'd love to hear from you.</p>
+        <form class="grid">
+          <input type="text" id="name" name="name" placeholder="Your Name" aria-label="Your Name" required />
+          <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Your Email" required />
+          <textarea id="message" name="message" placeholder="Your Message" aria-label="Your Message" required style="resize:vertical;min-height:120px;"></textarea>
+          <button type="submit" onclick="event.preventDefault()">Send Message</button>
+        </form>
+        <p>You can also email us at <a href="mailto:info@vaultifysolutions.com">info@vaultifysolutions.com</a>.</p>
+      </section>
+    </div>
+  </main>
+
+  <!-- Subscribe section -->
+  <section aria-label="Subscribe example">
+    <div class="container">
+      <article>
+        <hgroup>
+          <h2>Stay informed</h2>
+          <h3>Subscribe to security insights and updates</h3>
+        </hgroup>
+        <form class="grid">
+          <input type="text" id="firstname" name="firstname" placeholder="First name" aria-label="First name" required />
+          <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" required />
+          <button type="submit" onclick="event.preventDefault()">Subscribe</button>
+        </form>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="container">
+    <small>
+      <a href="#">Privacy</a> • <a href="#">Terms</a>
+    </small>
+  </footer>
+</body>
+</html>
