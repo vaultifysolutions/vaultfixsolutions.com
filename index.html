@@ -15,10 +15,10 @@
 <!-- NAVBAR -->
 <nav class="nav">
   <a href="index.html" class="brand">
-    <img src="logo.png" alt="Vaultify Solutions" class="brand-logo" height="75" width="75">
+    <img src="logo.png" alt="Vaultify Solutions" class="brand-logo">
     <div>
-      <div class="brand-name">VΛULTIFY SOLUTIONS</div>
-      <div class="brand-tag">Secure • Defend • Evolve</div>
+      <div class="brand-name">Vaultify Solutions</div>
+      <div class="brand-tag">Secure · Defend · Evolve</div>
     </div>
   </a>
   <ul class="nav-links">
@@ -27,24 +27,9 @@
     <li><a href="deliverables.html">Deliverables</a></li>
     <li><a href="security.html">Security</a></li>
   </ul>
-  <div class="nav-right">
-    <div class="theme-toggle-wrap">
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"></button>
-    </div>
-    <a href="contact.html" class="nav-cta">Request an Assessment</a>
-    <button class="hamburger" id="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
-<div class="mobile-menu" id="mobileMenu">
-  <a href="services.html">Services</a>
-  <a href="methodology.html">Methodology</a>
-  <a href="deliverables.html">Deliverables</a>
-  <a href="security.html">Security</a>
-  <a href="about.html">About</a>
   <a href="contact.html" class="nav-cta">Request an Assessment</a>
-</div>
+</nav>
+
 
 <!-- HERO -->
 <section class="hero">
@@ -237,7 +222,7 @@
     <div>
       <div class="ft-brand-row">
         <img src="logo.png" alt="Vaultify Solutions" class="ft-logo">
-        <div><div class="ft-brand-name">Vaultify Solutions</div><div class="ft-brand-tag">Cybersecurity Specialists</div></div>
+        <div><div class="ft-brand-name">Vaultify Solutions</div><div class="ft-brand-tag">Secure · Defend · Evolve</div></div>
       </div>
       <p class="ft-desc">Specialist web application and API vulnerability assessment for startups, SaaS, and fintech. Chennai, India — working globally.</p>
     </div>
@@ -275,22 +260,6 @@
   </div>
 </footer>
 
-<script>
-// Dark mode toggle
-const toggle = document.getElementById('themeToggle');
-const html = document.documentElement;
-const saved = localStorage.getItem('theme') || 'light';
-html.setAttribute('data-theme', saved);
-toggle.addEventListener('click', () => {
-  const current = html.getAttribute('data-theme');
-  const next = current === 'dark' ? 'light' : 'dark';
-  html.setAttribute('data-theme', next);
-  localStorage.setItem('theme', next);
-});
-// Mobile menu
-const burger = document.getElementById('hamburger');
-const menu = document.getElementById('mobileMenu');
-burger.addEventListener('click', () => menu.classList.toggle('open'));
-</script>
+
 </body>
 </html>
