@@ -14,7 +14,7 @@
 <nav class="nav">
   <a href="index.html" class="brand">
     <img src="logo.png" alt="Vaultify Solutions" class="brand-logo">
-    <div>
+    <div class="brand-text">
       <div class="brand-name">Vaultify Solutions</div>
       <div class="brand-tag">Secure · Defend · Evolve</div>
     </div>
@@ -24,26 +24,22 @@
     <li><a href="methodology.html">Methodology</a></li>
     <li><a href="deliverables.html">Deliverables</a></li>
     <li><a href="security.html">Security</a></li>
+    <li><a href="contact.html" class="nav-contact">Get in Touch</a></li>
   </ul>
-  <div style="display:flex;align-items:center;gap:14px;">
-    <a href="contact.html" class="nav-cta">Request an Assessment</a>
-    <button class="hamburger" id="hamburger" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 <div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
   <a href="services.html">Services</a>
   <a href="methodology.html">Methodology</a>
   <a href="deliverables.html">Deliverables</a>
   <a href="security.html">Security</a>
   <a href="about.html">About</a>
-  <a href="contact.html" class="nav-cta">Request an Assessment</a>
+  <a href="contact.html" class="mobile-cta">Request an Assessment</a>
 </div>
-
 <!-- NAVBAR -->
-
-
 
 <!-- HERO -->
 <section class="hero">
@@ -277,28 +273,27 @@
 
 <script>
 (function(){
-  var btn = document.getElementById('hamburger');
-  var menu = document.getElementById('mobileMenu');
-  if(!btn || !menu) return;
-  btn.addEventListener('click', function(){
-    menu.classList.toggle('open');
+  var btn=document.getElementById('hamburger');
+  var menu=document.getElementById('mobileMenu');
+  if(!btn||!menu) return;
+  btn.addEventListener('click',function(e){
+    e.stopPropagation();
+    var open=menu.classList.toggle('open');
     btn.classList.toggle('open');
-    document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+    document.body.style.overflow=open?'hidden':'';
   });
-  // Close on link click
   menu.querySelectorAll('a').forEach(function(a){
-    a.addEventListener('click', function(){
+    a.addEventListener('click',function(){
       menu.classList.remove('open');
       btn.classList.remove('open');
-      document.body.style.overflow = '';
+      document.body.style.overflow='';
     });
   });
-  // Close on outside click
-  document.addEventListener('click', function(e){
-    if(!menu.contains(e.target) && !btn.contains(e.target)){
+  document.addEventListener('click',function(e){
+    if(menu.classList.contains('open')&&!menu.contains(e.target)&&!btn.contains(e.target)){
       menu.classList.remove('open');
       btn.classList.remove('open');
-      document.body.style.overflow = '';
+      document.body.style.overflow='';
     }
   });
 })();
