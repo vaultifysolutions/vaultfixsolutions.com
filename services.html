@@ -12,7 +12,10 @@
 <nav class="nav">
   <a href="index.html" class="brand">
     <img src="logo.png" alt="Vaultify Solutions" class="brand-logo">
-    <div><div class="brand-name">Vaultify Solutions</div><div class="brand-tag">Secure · Defend · Evolve</div></div>
+    <div>
+      <div class="brand-name">Vaultify Solutions</div>
+      <div class="brand-tag">Secure · Defend · Evolve</div>
+    </div>
   </a>
   <ul class="nav-links">
     <li><a href="services.html">Services</a></li>
@@ -20,8 +23,22 @@
     <li><a href="deliverables.html">Deliverables</a></li>
     <li><a href="security.html">Security</a></li>
   </ul>
-  <a href="contact.html" class="nav-cta">Request an Assessment</a>
+  <div style="display:flex;align-items:center;gap:14px;">
+    <a href="contact.html" class="nav-cta">Request an Assessment</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="services.html">Services</a>
+  <a href="methodology.html">Methodology</a>
+  <a href="deliverables.html">Deliverables</a>
+  <a href="security.html">Security</a>
+  <a href="about.html">About</a>
+  <a href="contact.html" class="nav-cta">Request an Assessment</a>
+</div>
+
 
 <section class="page-hero">
   <div class="mw">
@@ -69,12 +86,34 @@
   </div>
   <div class="ft-bottom"><span class="ft-copy">© 2025 Vaultify Solutions. All rights reserved.</span><span class="ft-tag">Secure · Defend · Evolve</span></div>
 </footer>
+
 <script>
-const t=document.getElementById("themeToggle"),h=document.documentElement,s=localStorage.getItem("theme")||"light";
-h.setAttribute("data-theme",s);
-t.addEventListener("click",()=>{const c=h.getAttribute("data-theme"),n=c==="dark"?"light":"dark";h.setAttribute("data-theme",n);localStorage.setItem("theme",n);});
-const b=document.getElementById("hamburger"),m=document.getElementById("mobileMenu");
-b.addEventListener("click",()=>m.classList.toggle("open"));
+(function(){
+  var btn = document.getElementById('hamburger');
+  var menu = document.getElementById('mobileMenu');
+  if(!btn || !menu) return;
+  btn.addEventListener('click', function(){
+    menu.classList.toggle('open');
+    btn.classList.toggle('open');
+    document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+  });
+  // Close on link click
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      menu.classList.remove('open');
+      btn.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+  // Close on outside click
+  document.addEventListener('click', function(e){
+    if(!menu.contains(e.target) && !btn.contains(e.target)){
+      menu.classList.remove('open');
+      btn.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  });
+})();
 </script>
 </body>
 </html>

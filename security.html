@@ -1,4 +1,33 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta http-equiv="X-Content-Type-Options" content="nosniff"><meta http-equiv="X-Frame-Options" content="SAMEORIGIN"><meta name="referrer" content="strict-origin-when-cross-origin"><link rel="stylesheet" href="style.css"><title>Security — Vaultify Solutions</title></head><body><nav class="nav"><a href="index.html" class="brand"><img src="logo.png" alt="Vaultify Solutions" class="brand-logo"><div><div class="brand-name">Vaultify Solutions</div><div class="brand-tag">Secure · Defend · Evolve</div></div></a><ul class="nav-links"><li><a href="services.html">Services</a></li><li><a href="methodology.html">Methodology</a></li><li><a href="deliverables.html">Deliverables</a></li><li><a href="security.html">Security</a></li></ul><a href="contact.html" class="nav-cta">Request an Assessment</a></nav>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta http-equiv="X-Content-Type-Options" content="nosniff"><meta http-equiv="X-Frame-Options" content="SAMEORIGIN"><meta name="referrer" content="strict-origin-when-cross-origin"><link rel="stylesheet" href="style.css"><title>Security — Vaultify Solutions</title></head><body>
+<nav class="nav">
+  <a href="index.html" class="brand">
+    <img src="logo.png" alt="Vaultify Solutions" class="brand-logo">
+    <div>
+      <div class="brand-name">Vaultify Solutions</div>
+      <div class="brand-tag">Secure · Defend · Evolve</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="services.html">Services</a></li>
+    <li><a href="methodology.html">Methodology</a></li>
+    <li><a href="deliverables.html">Deliverables</a></li>
+    <li><a href="security.html">Security</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:14px;">
+    <a href="contact.html" class="nav-cta">Request an Assessment</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="services.html">Services</a>
+  <a href="methodology.html">Methodology</a>
+  <a href="deliverables.html">Deliverables</a>
+  <a href="security.html">Security</a>
+  <a href="about.html">About</a>
+  <a href="contact.html" class="nav-cta">Request an Assessment</a>
+</div>
 <section class="page-hero"><div class="mw">
   <div class="s-eyebrow"><div class="line"></div><span>Security</span></div>
   <h1 class="page-h">Responsible <em>Disclosure</em></h1>
@@ -52,4 +81,32 @@
   </div>
 </div></section>
 <footer class="footer"><div class="ft-top"><div><div class="ft-brand-row"><img src="logo.png" alt="Vaultify Solutions" class="ft-logo"><div><div class="ft-brand-name">Vaultify Solutions</div><div class="ft-brand-tag">Secure · Defend · Evolve</div></div></div><p class="ft-desc">Specialist web and API vulnerability assessment. Chennai, India — working globally.</p></div><div><div class="ft-col-title">Services</div><div class="ft-links"><a href="services.html">Web App Assessment</a><a href="services.html">API Assessment</a></div></div><div><div class="ft-col-title">Company</div><div class="ft-links"><a href="methodology.html">Methodology</a><a href="about.html">About</a><a href="security.html">Security</a><a href="privacy.html">Privacy Policy</a></div></div><div><div class="ft-col-title">Contact</div><div class="ft-links"><a href="mailto:consult@vaultifysolutions.com">consult@vaultifysolutions.com</a><a href="#">Chennai, India · Global</a></div></div></div><div class="ft-bottom"><span class="ft-copy">© 2025 Vaultify Solutions. All rights reserved.</span><span class="ft-tag">Secure · Defend · Evolve</span></div></footer>
+<script>
+(function(){
+  var btn = document.getElementById('hamburger');
+  var menu = document.getElementById('mobileMenu');
+  if(!btn || !menu) return;
+  btn.addEventListener('click', function(){
+    menu.classList.toggle('open');
+    btn.classList.toggle('open');
+    document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+  });
+  // Close on link click
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      menu.classList.remove('open');
+      btn.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+  // Close on outside click
+  document.addEventListener('click', function(e){
+    if(!menu.contains(e.target) && !btn.contains(e.target)){
+      menu.classList.remove('open');
+      btn.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  });
+})();
+</script>
 </body></html>
