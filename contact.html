@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta http-equiv="X-Content-Type-Options" content="nosniff"><meta http-equiv="X-Frame-Options" content="SAMEORIGIN"><meta name="referrer" content="strict-origin-when-cross-origin"><link rel="stylesheet" href="style.css"><title>Contact — Vaultify Solutions</title></head><body><nav class="nav"><a href="index.html" class="brand"><img src="logo.png" alt="Vaultify Solutions" class="brand-logo"><div><div class="brand-name">Vaultify Solutions</div><div class="brand-tag">Cybersecurity Specialists</div></div></a><ul class="nav-links"><li><a href="services.html">Services</a></li><li><a href="methodology.html">Methodology</a></li><li><a href="deliverables.html">Deliverables</a></li><li><a href="security.html">Security</a></li></ul><div class="nav-right"><div class="theme-toggle-wrap"><button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"></button></div><a href="contact.html" class="nav-cta">Request an Assessment</a><button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button></div></nav><div class="mobile-menu" id="mobileMenu"><a href="services.html">Services</a><a href="methodology.html">Methodology</a><a href="deliverables.html">Deliverables</a><a href="security.html">Security</a><a href="about.html">About</a><a href="contact.html" class="nav-cta">Request an Assessment</a></div>
+<section style="min-height:100vh;padding:120px 80px 100px;">
+  <div class="mw">
+    <div class="ct-grid">
+      <div>
+        <div class="s-eyebrow"><div class="line"></div><span>Contact Us</span></div>
+        <h2 class="ct-h">Let's Talk About<br>Your Security</h2>
+        <p class="ct-sub">Fill in the form and we will respond within 24 hours with an honest assessment of what your application needs. No obligation, no upsell.</p>
+        <div class="ct-detail"><div class="ct-icon">✉</div><span class="ct-txt">consult@vaultifysolutions.com</span></div>
+        <div class="ct-detail"><div class="ct-icon">📍</div><span class="ct-txt">Chennai, Tamil Nadu, India · Working Globally</span></div>
+        <div class="ct-detail"><div class="ct-icon">⏱</div><span class="ct-txt">Response within 24 hours</span></div>
+        <div class="ct-promise">
+          <div class="ctp-t">Free With Every Enquiry</div>
+          <p class="ctp-p">Before we speak, we run a complimentary passive security review of your domain — DNS exposure, SSL configuration, public headers, and known CVEs. You arrive with real data, not just questions.</p>
+        </div>
+      </div>
+      <div>
+        <div class="form-wrap">
+          <form id="contactForm" onsubmit="handleSubmit(event)">
+            <div class="f-row">
+              <div class="fg"><label class="fl">First Name</label><input type="text" class="fi" placeholder="John" required></div>
+              <div class="fg"><label class="fl">Last Name</label><input type="text" class="fi" placeholder="Smith" required></div>
+            </div>
+            <div class="fg"><label class="fl">Business Email</label><input type="email" class="fi" placeholder="john@company.com" required></div>
+            <div class="fg"><label class="fl">Company / Website</label><input type="text" class="fi" placeholder="company.com"></div>
+            <div class="fg">
+              <label class="fl">Service Required</label>
+              <select class="fs" required>
+                <option value="" disabled selected>Select what you need...</option>
+                <option>Web Application Vulnerability Assessment</option>
+                <option>API Security Assessment</option>
+                <option>Web App + API Combined</option>
+                <option>Retest Validation</option>
+                <option>Not sure — need guidance</option>
+              </select>
+            </div>
+            <div class="fg"><label class="fl">Tell Us About Your Situation</label><textarea class="fta" placeholder="Describe your application, tech stack, what concerns you, and your timeline..."></textarea></div>
+            <button type="submit" class="f-btn">Send Message</button>
+          </form>
+          <div id="successMsg" style="display:none;text-align:center;padding:60px 20px;">
+            <div style="width:52px;height:52px;background:var(--navy-lt);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;"><svg viewBox="0 0 24 24" fill="none" width="24" height="24"><polyline points="4,12 9,17 20,6" stroke="var(--navy)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3 style="font-family:'DM Serif Display',serif;font-size:1.5rem;font-weight:400;color:var(--text);margin-bottom:10px;">Message Received</h3>
+            <p style="font-size:0.9rem;color:var(--body);line-height:1.75;">We will review your enquiry and respond within 24 hours with a clear assessment and proposed next step.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer"><div class="ft-top"><div><div class="ft-brand-row"><img src="logo.png" alt="Vaultify Solutions" class="ft-logo"><div><div class="ft-brand-name">Vaultify Solutions</div><div class="ft-brand-tag">Cybersecurity Specialists</div></div></div><p class="ft-desc">Specialist web and API vulnerability assessment. Chennai, India — working globally.</p></div><div><div class="ft-col-title">Services</div><div class="ft-links"><a href="services.html">Web App Assessment</a><a href="services.html">API Assessment</a></div></div><div><div class="ft-col-title">Company</div><div class="ft-links"><a href="methodology.html">Methodology</a><a href="about.html">About</a><a href="security.html">Security</a><a href="privacy.html">Privacy Policy</a></div></div><div><div class="ft-col-title">Contact</div><div class="ft-links"><a href="mailto:consult@vaultifysolutions.com">consult@vaultifysolutions.com</a><a href="#">Chennai, India · Global</a></div></div></div><div class="ft-bottom"><span class="ft-copy">© 2025 Vaultify Solutions. All rights reserved.</span><span class="ft-tag">Secure · Defend · Evolve</span></div></footer>
+<script>const t=document.getElementById("themeToggle"),h=document.documentElement,s=localStorage.getItem("theme")||"light";h.setAttribute("data-theme",s);t.addEventListener("click",()=>{const c=h.getAttribute("data-theme"),n=c==="dark"?"light":"dark";h.setAttribute("data-theme",n);localStorage.setItem("theme",n);});const b=document.getElementById("hamburger"),m=document.getElementById("mobileMenu");b.addEventListener("click",()=>m.classList.toggle("open"));</script>
+<script>function handleSubmit(e){e.preventDefault();document.getElementById("contactForm").style.display="none";document.getElementById("successMsg").style.display="block";}</script>
+</body></html>

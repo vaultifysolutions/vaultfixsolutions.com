@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaultify Solutions — Web & API Vulnerability Assessment</title>
+  <meta name="description" content="Specialist web application and API vulnerability assessment for startups, SaaS, and fintech. Manual verification. CVSS reports. Clear remediation.">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="nav">
+  <a href="index.html" class="brand">
+    <img src="logo.png" alt="Vaultify Solutions" class="brand-logo">
+    <div>
+      <div class="brand-name">Vaultify Solutions</div>
+      <div class="brand-tag">Cybersecurity Specialists</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="services.html">Services</a></li>
+    <li><a href="methodology.html">Methodology</a></li>
+    <li><a href="deliverables.html">Deliverables</a></li>
+    <li><a href="security.html">Security</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="theme-toggle-wrap">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"></button>
+    </div>
+    <a href="contact.html" class="nav-cta">Request an Assessment</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="services.html">Services</a>
+  <a href="methodology.html">Methodology</a>
+  <a href="deliverables.html">Deliverables</a>
+  <a href="security.html">Security</a>
+  <a href="about.html">About</a>
+  <a href="contact.html" class="nav-cta">Request an Assessment</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-inner mw">
+    <div>
+      <div class="hero-eyebrow">
+        <span class="hero-dot"></span>
+        <span>Web &amp; API Vulnerability Assessment</span>
+      </div>
+      <h1>Specialist <em>Vulnerability</em><br>Assessment for<br>Modern Applications</h1>
+      <div class="hero-rule"></div>
+      <p class="hero-sub">Vaultify Solutions helps modern companies identify, validate, and remediate exploitable security weaknesses before they become business risk.</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn-primary">Request an Assessment</a>
+        <a href="deliverables.html" class="btn-outline">View Sample Report</a>
+      </div>
+      <div class="hero-kpis">
+        <div><div class="kpi-num">48h</div><div class="kpi-label">Report Delivery</div></div>
+        <div><div class="kpi-num">0%</div><div class="kpi-label">False Positives</div></div>
+        <div><div class="kpi-num">NDA</div><div class="kpi-label">Every Engagement</div></div>
+      </div>
+    </div>
+    <div class="hero-panel">
+      <div class="dash-card">
+        <div class="dash-bar">
+          <span class="d-dot d-r"></span><span class="d-dot d-y"></span><span class="d-dot d-g"></span>
+          <span class="d-title">vaultify — assessment-dashboard</span>
+        </div>
+        <div class="cvss-panel">
+          <div class="cvss-title">// CVSS Risk Distribution</div>
+          <div class="cv-row"><span class="cv-name">A01 — Broken Access Control</span><div class="cv-bar-w"><div class="cv-bar" style="width:98%;background:#EF4444;"></div></div><span class="cv-score sc-cr">9.8</span></div>
+          <div class="cv-row"><span class="cv-name">A03 — Injection</span><div class="cv-bar-w"><div class="cv-bar" style="width:86%;background:#D97706;"></div></div><span class="cv-score sc-hi">8.6</span></div>
+          <div class="cv-row"><span class="cv-name">A07 — Auth Failures</span><div class="cv-bar-w"><div class="cv-bar" style="width:75%;background:#D97706;"></div></div><span class="cv-score sc-hi">7.5</span></div>
+          <div class="cv-row"><span class="cv-name">A05 — Misconfiguration</span><div class="cv-bar-w"><div class="cv-bar" style="width:53%;background:#2563EB;"></div></div><span class="cv-score sc-me">5.3</span></div>
+        </div>
+        <div class="findings-panel">
+          <div class="findings-title">// Validated Findings</div>
+          <div class="finding-row"><span class="f-badge fb-cr">CRITICAL</span><span class="f-name">IDOR via /api/user/{id} — data exposed</span></div>
+          <div class="finding-row"><span class="f-badge fb-hi">HIGH</span><span class="f-name">SQL Injection in search parameter</span></div>
+          <div class="finding-row"><span class="f-badge fb-hi">HIGH</span><span class="f-name">Auth bypass — /admin unauthenticated</span></div>
+          <div class="finding-row"><span class="f-badge fb-me">MEDIUM</span><span class="f-name">Missing rate limiting on /auth/login</span></div>
+        </div>
+        <div class="dash-footer">
+          <span class="df-left">14 findings · 0 false positives</span>
+          <span class="df-right"><span class="ok-dot"></span>Verification complete</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker"><div class="ticker-track">
+  <span class="t-item">Web App Assessment<span class="t-dot"> · </span></span>
+  <span class="t-item">API Security Testing<span class="t-dot"> · </span></span>
+  <span class="t-item">OWASP Top 10<span class="t-dot"> · </span></span>
+  <span class="t-item">Manual Verification<span class="t-dot"> · </span></span>
+  <span class="t-item">CVSS v3.1 Scoring<span class="t-dot"> · </span></span>
+  <span class="t-item">IDOR Testing<span class="t-dot"> · </span></span>
+  <span class="t-item">Auth &amp; Access Control<span class="t-dot"> · </span></span>
+  <span class="t-item">Business Logic Review<span class="t-dot"> · </span></span>
+  <span class="t-item">Retest Validation<span class="t-dot"> · </span></span>
+  <span class="t-item">Secure · Defend · Evolve<span class="t-dot"> · </span></span>
+  <span class="t-item">Web App Assessment<span class="t-dot"> · </span></span>
+  <span class="t-item">API Security Testing<span class="t-dot"> · </span></span>
+  <span class="t-item">OWASP Top 10<span class="t-dot"> · </span></span>
+  <span class="t-item">Manual Verification<span class="t-dot"> · </span></span>
+  <span class="t-item">CVSS v3.1 Scoring<span class="t-dot"> · </span></span>
+  <span class="t-item">IDOR Testing<span class="t-dot"> · </span></span>
+  <span class="t-item">Auth &amp; Access Control<span class="t-dot"> · </span></span>
+  <span class="t-item">Business Logic Review<span class="t-dot"> · </span></span>
+  <span class="t-item">Retest Validation<span class="t-dot"> · </span></span>
+  <span class="t-item">Secure · Defend · Evolve<span class="t-dot"> · </span></span>
+</div></div>
+
+<!-- POSITIONING -->
+<section class="section alt">
+  <div class="mw">
+    <div class="s-eyebrow"><div class="line"></div><span>Our Focus</span></div>
+    <h2 class="s-h">Focused Assessment.<br><em>Manual Validation. Clear Remediation.</em></h2>
+    <p class="s-sub">Vaultify Solutions is intentionally focused on vulnerability assessment. This specialisation allows every engagement to be deeper, cleaner, and more actionable than a general security review.</p>
+    <div class="trust-grid">
+      <div class="trust-card"><div class="trust-icon">🎯</div><div class="trust-title">Specialist Focus</div><div class="trust-text">One discipline. Web and API vulnerability assessment. Every process, tool, and analyst built around this single domain.</div></div>
+      <div class="trust-card"><div class="trust-icon">✓</div><div class="trust-title">Manual Validation</div><div class="trust-text">No automated scanner output goes unverified. Every finding reviewed and confirmed by a certified analyst before reaching your report.</div></div>
+      <div class="trust-card"><div class="trust-icon">📋</div><div class="trust-title">Clear Remediation</div><div class="trust-text">Reports written for both executives and engineering teams — risk picture for leadership, developer-ready fix steps for your team.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section">
+  <div class="mw">
+    <div class="s-eyebrow"><div class="line"></div><span>Services</span></div>
+    <h2 class="s-h">What We <em>Assess</em></h2>
+    <p class="s-sub">Every service delivered with rigorous methodology — manual-led testing, zero false positives, evidence-backed reporting.</p>
+    <div class="svc-grid">
+      <div class="svc-card"><div class="svc-num">// 01</div><h3>Web Application Assessment</h3><p>Identify security weaknesses in modern web applications — authentication, authorisation, input validation, session handling, and business logic flaws.</p></div>
+      <div class="svc-card"><div class="svc-num">// 02</div><h3>API Vulnerability Assessment</h3><p>Assess REST and GraphQL endpoints for access control issues, broken object-level authorisation, insecure data exposure, and OWASP API Top 10 risks.</p></div>
+      <div class="svc-card"><div class="svc-num">// 03</div><h3>OWASP Top 10 Review</h3><p>Evaluate applications against recognised industry risk categories using structured, evidence-based testing methodology with full documentation.</p></div>
+      <div class="svc-card"><div class="svc-num">// 04</div><h3>Auth &amp; Access Control Testing</h3><p>Deep testing of authentication flows, session management, privilege escalation, and access control enforcement across all application layers.</p></div>
+      <div class="svc-card"><div class="svc-num">// 05</div><h3>Remediation Guidance</h3><p>Practical, developer-friendly remediation steps for every finding — prioritised by risk so your team fixes what matters most, first.</p></div>
+      <div class="svc-card"><div class="svc-num">// 06</div><h3>Retest Validation</h3><p>Confirm that remediated vulnerabilities have been properly resolved. We retest targeted findings after your engineering team applies fixes.</p></div>
+    </div>
+    <div style="text-align:center;margin-top:36px;">
+      <a href="services.html" class="btn-outline">View All Services →</a>
+    </div>
+  </div>
+</section>
+
+<!-- SCENARIOS -->
+<section class="section alt">
+  <div class="mw">
+    <div class="s-eyebrow"><div class="line"></div><span>Representative Scenarios</span></div>
+    <h2 class="s-h">Assessment <em>Scenarios</em></h2>
+    <p class="s-sub">These represent the types of vulnerabilities our assessments uncover. All scenarios are generalised for confidentiality.</p>
+    <div class="sc-grid">
+      <div class="sc-card"><div class="sc-type">// FinTech API Assessment</div><div class="sc-title">API Authorisation Weakness</div><div class="sc-text">Identified an authorisation weakness that could expose sensitive account-level data through insecure object access across authenticated API endpoints.</div><div class="sc-finding">Finding: IDOR via /api/accounts/{id} — CVSS 9.1 Critical</div></div>
+      <div class="sc-card"><div class="sc-type">// SaaS Web Application</div><div class="sc-title">Auth &amp; Session Vulnerabilities</div><div class="sc-text">Discovered authentication and session handling weaknesses before production launch — predictable session tokens and missing re-authentication on sensitive actions.</div><div class="sc-finding">Finding: Session fixation + missing auth on /admin — CVSS 8.2 High</div></div>
+      <div class="sc-card"><div class="sc-type">// Startup Platform</div><div class="sc-title">Prioritised Remediation Roadmap</div><div class="sc-text">Provided a prioritised remediation roadmap for OWASP Top 10 risks across core application workflows before investor due diligence.</div><div class="sc-finding">Outcome: 12 findings remediated and validated within 2 weeks</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SAMPLE REPORT -->
+<section class="section">
+  <div class="mw">
+    <div class="s-eyebrow"><div class="line"></div><span>Sample Report</span></div>
+    <h2 class="s-h">See the Quality of Our<br><em>Reporting</em> Before You Engage</h2>
+    <p class="s-sub">A professional vulnerability assessment is only as useful as the clarity of its report. Vaultify reports are designed for both executives and engineering teams.</p>
+    <div class="report-card">
+      <div class="rc-hdr"><span class="rc-title">Vaultify Solutions — Vulnerability Assessment Report</span><span class="rc-meta">CONFIDENTIAL · v1.0 · Sample</span></div>
+      <div class="rc-body">
+        <div class="rc-col">
+          <div class="rc-col-t">// Risk Summary</div>
+          <div class="risk-rows">
+            <div class="risk-row"><span class="risk-lbl">Critical</span><span class="risk-cnt sc-cr">2</span></div>
+            <div class="risk-row"><span class="risk-lbl">High</span><span class="risk-cnt sc-hi">4</span></div>
+            <div class="risk-row"><span class="risk-lbl">Medium</span><span class="risk-cnt sc-me">5</span></div>
+            <div class="risk-row"><span class="risk-lbl">Low / Info</span><span class="risk-cnt sc-lo">3</span></div>
+            <div class="risk-row" style="border-top:1px solid var(--bd);margin-top:4px;padding-top:8px;">
+              <span class="risk-lbl" style="font-weight:700;">Total</span>
+              <span class="risk-cnt" style="color:var(--text);">14</span>
+            </div>
+          </div>
+        </div>
+        <div class="rc-col">
+          <div class="rc-col-t">// Validated Findings</div>
+          <div class="fp-list">
+            <div class="fp-item fp-cr"><div class="fp-name">Insecure Direct Object Reference (IDOR)</div><div class="fp-loc">GET /api/user/{id} — CVSS 9.8</div></div>
+            <div class="fp-item fp-hi"><div class="fp-name">SQL Injection via search parameter</div><div class="fp-loc">POST /search?q= — CVSS 8.6</div></div>
+            <div class="fp-item fp-me"><div class="fp-name">Missing rate limiting on auth endpoint</div><div class="fp-loc">POST /auth/login — CVSS 5.3</div></div>
+          </div>
+        </div>
+        <div class="rc-col">
+          <div class="rc-col-t">// CVSS Detail — Finding #1</div>
+          <div class="cvss-det">
+            <div class="cvss-r"><span class="cvss-l">Base Score</span><span class="cvss-big">9.8</span></div>
+            <div class="cvss-r"><span class="cvss-l">Severity</span><span class="cvss-v" style="color:var(--red);font-weight:700;">CRITICAL</span></div>
+            <div class="cvss-r"><span class="cvss-l">Attack Vector</span><span class="cvss-v">Network</span></div>
+            <div class="cvss-r"><span class="cvss-l">Privileges Required</span><span class="cvss-v">Low</span></div>
+            <div class="cvss-r"><span class="cvss-l">Impact</span><span class="cvss-v">High (C/I/A)</span></div>
+            <div class="cvss-r"><span class="cvss-l">Exploitability</span><span class="cvss-v" style="color:var(--red);">Confirmed</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="rc-ftr"><a href="contact.html" class="btn-primary">Request a Full Sample Report</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section navy">
+  <div class="mw">
+    <div class="cta-box">
+      <div class="s-eyebrow" style="justify-content:center;"><div class="line w"></div><span class="w">Get Started</span><div class="line w"></div></div>
+      <h2 class="s-h w">Ready to Validate Your<br><em style="color:rgba(255,255,255,0.65);">Attack Surface?</em></h2>
+      <p class="s-sub w center">Start with a focused Web or API Vulnerability Assessment built for clarity, accuracy, and remediation.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn-white">Request an Assessment</a>
+        <a href="deliverables.html" class="btn-ghost-white">View Sample Report</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="ft-top">
+    <div>
+      <div class="ft-brand-row">
+        <img src="logo.png" alt="Vaultify Solutions" class="ft-logo">
+        <div><div class="ft-brand-name">Vaultify Solutions</div><div class="ft-brand-tag">Cybersecurity Specialists</div></div>
+      </div>
+      <p class="ft-desc">Specialist web application and API vulnerability assessment for startups, SaaS, and fintech. Chennai, India — working globally.</p>
+    </div>
+    <div>
+      <div class="ft-col-title">Services</div>
+      <div class="ft-links">
+        <a href="services.html">Web App Assessment</a>
+        <a href="services.html">API Assessment</a>
+        <a href="services.html">OWASP Top 10 Review</a>
+        <a href="services.html">Retest Validation</a>
+      </div>
+    </div>
+    <div>
+      <div class="ft-col-title">Company</div>
+      <div class="ft-links">
+        <a href="methodology.html">Methodology</a>
+        <a href="deliverables.html">Deliverables</a>
+        <a href="about.html">About</a>
+        <a href="security.html">Security</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+    <div>
+      <div class="ft-col-title">Contact</div>
+      <div class="ft-links">
+        <a href="mailto:consult@vaultifysolutions.com">consult@vaultifysolutions.com</a>
+        <a href="#">Chennai, India · Global</a>
+        <a href="contact.html">Request Assessment</a>
+      </div>
+    </div>
+  </div>
+  <div class="ft-bottom">
+    <span class="ft-copy">© 2025 Vaultify Solutions. All rights reserved.</span>
+    <span class="ft-tag">Secure · Defend · Evolve</span>
+  </div>
+</footer>
+
+<script>
+// Dark mode toggle
+const toggle = document.getElementById('themeToggle');
+const html = document.documentElement;
+const saved = localStorage.getItem('theme') || 'light';
+html.setAttribute('data-theme', saved);
+toggle.addEventListener('click', () => {
+  const current = html.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+});
+// Mobile menu
+const burger = document.getElementById('hamburger');
+const menu = document.getElementById('mobileMenu');
+burger.addEventListener('click', () => menu.classList.toggle('open'));
+</script>
+</body>
+</html>
