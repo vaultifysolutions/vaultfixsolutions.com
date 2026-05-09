@@ -1,14 +1,14 @@
-Vaultify Solutions Website
---------------------------
+Vaultify Solutions - Premium Website Build
+------------------------------------------
 
 Instructions:
 1. Extract all files from this ZIP folder into a new folder on your computer.
-2. Take the logo image you uploaded earlier, rename it to exactly "logo.png", and place it in the same folder as these files.
-3. Double-click "index.html" to open the website in your browser!
+2. Make sure your "logo.jpg" file is inside this same folder.
+3. Double-click "index.html" to view your new premium site!
 
-Files included:
-- style.css
-- index.html
-- services.html
-- about.html
-- contact.html
+Updates in this version:
+- Fully integrated custom logo styling (HTML & CSS)
+- Upgraded to a clean, light corporate theme
+- Added Montserrat & Inter Google Fonts for premium typography
+- Added box-shadows, hover transitions, and clean spacing
+- Updated contact page email to consult@vaultifysolutions.com

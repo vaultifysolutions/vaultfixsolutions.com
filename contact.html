@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Vaultify Solutions</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <a href="index.html" class="brand">
-            <img src="logo.png" alt="Vaultify Logo">
-            <div class="brand-text">
-                <span class="brand-name">VΛULTIFY Solutions</span>
-                <span class="tagline">Secure • Defend • Evolve</span>
+            <img src="logo.jpg" alt="Vaultify Logo" class="brand-mark">
+            <div class="brand-text-custom">
+                <div class="main-text">VΛULTIFY</div>
+                <div class="sub-text">SOLUTIONS</div>
+                <div class="tagline-text">Secure • Defend • Evolve</div>
             </div>
         </a>
         <nav>
@@ -20,25 +22,39 @@
             <a href="contact.html" class="btn">Get in Touch</a>
         </nav>
     </header>
+
     <main>
         <div class="hero">
             <h1>Let's Get in Touch</h1>
             <p class="subtitle">Ready to schedule an assessment or have a question? We're here to help.</p>
         </div>
-        <form class="contact-form" onsubmit="alert('Thank you for reaching out! A member of the Vaultify team will be in touch shortly. You can also email us directly at info@vaultifysolutions.com'); return false;">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">How can we help you?</label>
-            <textarea id="message" name="message" rows="6" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-            <p style="text-align: center; margin-top: 20px; font-size: 14px; color: #666;">
+
+        <form class="contact-form" onsubmit="alert('Thank you for reaching out! A member of the Vaultify team will be in touch shortly. You can also email us directly at consult@vaultifysolutions.com'); return false;">
+            
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="john@company.com">
+            </div>
+
+            <div class="form-group">
+                <label for="message">How can we help you?</label>
+                <textarea id="message" name="message" rows="6" required placeholder="Tell us about your security needs..."></textarea>
+            </div>
+
+            <button type="submit" class="btn" style="margin-top: 10px;">Send Message</button>
+
+            <p style="text-align: center; margin-top: 20px; font-size: 14px; color: var(--text-muted);">
                 Alternatively, email us directly at: <br>
-                <a href="mailto:info@vaultifysolutions.com" style="color: var(--primary-blue); font-weight: bold;">info@vaultifysolutions.com</a>
+                <a href="mailto:consult@vaultifysolutions.com" style="color: var(--primary-blue); font-weight: 600; text-decoration: none;">consult@vaultifysolutions.com</a>
             </p>
         </form>
     </main>
+
     <footer>
         <div class="newsletter">
             <h3>Subscribe for Security Insights</h3>
@@ -49,7 +65,8 @@
             </form>
         </div>
         <div class="footer-links">
-            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
             <p>&copy; 2026 Vaultify Solutions. All rights reserved.</p>
         </div>
     </footer>
