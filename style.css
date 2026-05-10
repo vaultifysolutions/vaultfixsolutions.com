@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
-
 /* ══════════════════════════════════════
    DARK MODE — PERMANENT
    Enhanced text colors for readability
@@ -815,12 +814,12 @@ ul{list-style:none;}
   .brand-tag{font-size:0.44rem;}
 
   /* HERO */
-  .hero{padding:72px 16px 48px;min-height:auto;}
+  .hero{padding:76px 16px 44px;min-height:auto;}
   .hero-inner{grid-template-columns:1fr;}
   .dash-card{display:none;}
-  .hero h1{font-size:clamp(1.8rem,7vw,2.4rem);line-height:1.14;}
+  .hero h1{font-size:clamp(1.8rem,7vw,2.4rem);line-height:1.14;margin-bottom:18px;}
   .hero-sub{font-size:0.95rem;max-width:100%;margin-bottom:28px;}
-  .hero-eyebrow{margin-bottom:20px;}
+  .hero-eyebrow{margin-bottom:16px;}
   .hero-eyebrow span{font-size:0.58rem;}
   .hero-actions{flex-direction:column;gap:10px;margin-bottom:36px;}
   .hero-actions .btn-primary,
@@ -831,7 +830,7 @@ ul{list-style:none;}
 
   /* SECTIONS */
   .section{padding:52px 16px;}
-  .page-hero{padding:82px 16px 40px;}
+  .page-hero{padding:76px 16px 36px;}
   .s-h{font-size:clamp(1.6rem,6vw,2.1rem);}
   .s-sub{font-size:0.9rem;max-width:100%;}
   .page-h{font-size:clamp(1.8rem,6.5vw,2.4rem);}
@@ -878,7 +877,7 @@ ul{list-style:none;}
   .brand-name{font-size:0.78rem;}
   .brand-tag{font-size:0.42rem;letter-spacing:0.1em;}
 
-  .hero{padding:68px 14px 40px;min-height:auto;}
+  .hero{padding:72px 14px 36px;min-height:auto;}
   .hero h1{font-size:1.65rem;}
   .hero-sub{font-size:0.88rem;}
   .kpi-num{font-size:1.65rem;}
